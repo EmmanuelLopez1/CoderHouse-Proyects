@@ -11,6 +11,11 @@
 /*
     ESTILOS GENERALES
 */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .boton {
   width: 200px;
   text-decoration: none;
@@ -37,12 +42,13 @@
 
 p {
   font-family: "EB Garamond";
-  font-size: 18px;
+  font-size: 24px;
 }
 
 a {
   font-family: "EB Garamond" !important;
   font-size: 18px;
+  text-decoration: none;
 }
 
 /*
@@ -109,13 +115,18 @@ a {
 }
 
 /*MISION Y VISION DE LA EMPRESA*/
+.objetivo-empresarial {
+  margin-bottom: 50px;
+}
 .objetivo-empresarial .objetivo-empresarial__tarjeta {
   border: 1px solid black;
   border-radius: 5px;
+  box-shadow: 5px 5px 0px 0px #ccc;
   width: 80%;
   margin: auto;
   margin-top: 30px;
   text-align: center;
+  transition: all 1s;
 }
 .objetivo-empresarial .objetivo-empresarial__tarjeta .objetivo-empresarial__titulo {
   margin-top: 20px;
@@ -131,6 +142,11 @@ a {
 }
 .objetivo-empresarial .objetivo-empresarial__tarjeta:target {
   background-color: #E02084;
+}
+.objetivo-empresarial .objetivo-empresarial__tarjeta:hover {
+  background-color: #E02084;
+  color: white;
+  transform: scale(1.05);
 }
 
 /*PRESENTACION DE LA EMPRESA*/
@@ -213,6 +229,8 @@ a {
 .footer .footer__redes-sociales .footer__red-social {
   width: 50px;
   cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
 .footer .footer__redes-sociales .footer__img {
   margin: 0px 10px;
@@ -267,6 +285,9 @@ a {
 /*
     PAGINA DE SERVICIOS
 */
+.servicios {
+  margin-bottom: 50px;
+}
 .servicios .servicios__presentacion {
   width: 100%;
   margin: 40px auto;
@@ -292,8 +313,10 @@ a {
   margin-top: 30px;
 }
 .servicios .servicios__cards .servicios__card {
+  height: auto;
   margin: auto;
   margin-bottom: 30px;
+  height: auto !important;
 }
 .servicios .servicios__cards .servicios__card .servicios__img {
   width: 80px;
@@ -346,6 +369,7 @@ a {
   margin: auto;
   display: grid;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .contacto .contacto__formulario {
   display: grid;
@@ -355,6 +379,9 @@ a {
   margin-bottom: 50px;
   text-align: center;
   padding-top: 50px;
+}
+.contacto .contacto__formulario .contacto__parrafo {
+  font-size: 22px;
 }
 .contacto .contacto__formulario .contacto__newsletter {
   display: flex;
@@ -370,9 +397,22 @@ a {
 .contacto .contacto__formulario .contacto__textarea {
   outline: none;
   padding-left: 5px;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 130px;
+  min-height: 130px;
 }
 .contacto .contacto__formulario .contacto__boton {
   margin: auto;
+}
+.contacto .contacto__formulario .contacto__checkbox {
+  margin-left: 10px;
+  margin-top: -13px;
+  width: 20px;
+  height: 20px;
+}
+.contacto .contacto__formulario .contacto__checkbox:hover {
+  cursor: pointer;
 }
 .contacto .contacto__alternativo {
   text-align: center;
@@ -391,6 +431,45 @@ a {
     align-items: center;
   }
 }
+/*
+    PRUEBA
+*/
+.header__prueba {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: rgba(32, 52, 223, 0);
+  margin-top: 0px;
+  align-items: center;
+  position: fixed;
+}
+.header__prueba img {
+  width: 50px;
+  padding-right: 200px;
+}
+.header__prueba ul {
+  display: flex;
+  list-style: none;
+}
+.header__prueba ul li {
+  padding: 0px 20px;
+}
+.header__prueba ul li a {
+  font-size: 24px;
+  color: white;
+}
+
+.design .parteSuperior {
+  width: 100%;
+  height: 250px;
+  background-color: black;
+}
+.design .video video {
+  width: 100%;
+}
+
 /*
     GALERIA
 */
