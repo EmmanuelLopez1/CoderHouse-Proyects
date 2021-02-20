@@ -432,45 +432,6 @@ a {
   }
 }
 /*
-    PRUEBA
-*/
-.header__prueba {
-  width: 100%;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  background-color: rgba(32, 52, 223, 0);
-  margin-top: 0px;
-  align-items: center;
-  position: fixed;
-}
-.header__prueba img {
-  width: 50px;
-  padding-right: 200px;
-}
-.header__prueba ul {
-  display: flex;
-  list-style: none;
-}
-.header__prueba ul li {
-  padding: 0px 20px;
-}
-.header__prueba ul li a {
-  font-size: 24px;
-  color: white;
-}
-
-.design .parteSuperior {
-  width: 100%;
-  height: 250px;
-  background-color: black;
-}
-.design .video video {
-  width: 100%;
-}
-
-/*
     GALERIA
 */
 .galeria {
