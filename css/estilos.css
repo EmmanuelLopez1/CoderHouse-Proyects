@@ -349,25 +349,41 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
     RESPONSIVE SERVICIOS CARDS
 */
 @media (min-width: 786px) {
+  .servicios {
+    text-align: center;
+  }
   .servicios .servicios__cards {
     display: grid;
+    grid-template-areas: "subtitulo subtitulo";
     grid-template-columns: 50% 50%;
   }
   .servicios .servicios__cards .servicios__card {
     margin: 10px auto;
     height: 330px;
   }
+  .servicios .servicios__cards .servicios__subtitulo {
+    grid-area: subtitulo;
+  }
 }
 @media (min-width: 1024px) {
+  .servicios {
+    text-align: center;
+    margin-bottom: 100px;
+  }
   .servicios .servicios__cards {
     width: 90%;
+    grid-template-areas: "subtitulo subtitulo subtitulo subtitulo";
     grid-template-columns: 22% 22% 22% 22%;
     grid-gap: 40px;
     justify-content: center;
+    text-align: center;
   }
   .servicios .servicios__cards .servicios__card {
     max-width: 100%;
     height: 310px;
+  }
+  .servicios .servicios__cards .servicios__subtitulo {
+    grid-area: subtitulo;
   }
 }
 /*
