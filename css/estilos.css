@@ -54,26 +54,37 @@ a {
 /*
     HEADER
 */
-.navbar .container-fluid .collapse .navbar-nav .nav-item {
+header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F8F9FA;
+}
+header .logo .logo__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 99px;
+}
+header .navbar .container-fluid .collapse .navbar-nav .nav-item {
   margin: 0px 10px;
 }
-.navbar .container-fluid .collapse .navbar-nav .nav-item:hover {
+header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+  color: black;
+  font-size: 22px;
+}
+header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover {
   background-color: #E02084;
   padding: 0px 5px;
   transition: all 0.5s;
 }
-.navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
+header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   color: white;
 }
 @media (max-width: 994px) {
-  .navbar .container-fluid .collapse .navbar-nav .nav-item {
+  header .navbar .container-fluid .collapse .navbar-nav .nav-item {
     margin: 10px 0px;
   }
-}
-.navbar .navbar__img {
-  width: 50px;
-  height: 50px;
-  border-radius: 99px;
 }
 
 /*IMAGEN PRINCIPAL Y ENCABEZADO*/
