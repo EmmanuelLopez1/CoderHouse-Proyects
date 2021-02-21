@@ -18,16 +18,18 @@
 
 .boton {
   width: 200px;
+  height: 50px;
   text-decoration: none;
   text-align: center;
   border: 1px solid white;
   border-radius: 10px;
   background-color: #E02084;
   color: white;
-  height: 40px;
   line-height: 30px;
   transition: all 1.5s;
   box-shadow: 0px 5px 5px 0px #5f5f5f;
+  font-size: 22px;
+  cursor: pointer;
 }
 
 .boton:hover {
@@ -102,7 +104,7 @@ a {
   height: 850px;
 }
 .background .brackground__titular {
-  margin: 87px auto;
+  margin: 40px auto;
   width: 45%;
 }
 .background .brackground__titular .background__titulo {
@@ -114,16 +116,10 @@ a {
   text-align: justify;
   color: white;
 }
-.background .brackground__titular .boton {
-  width: 200px !important;
-  height: 50px !important;
-}
-.background .background__img-content {
+.background .background__img {
+  max-width: 40%;
   margin: auto;
-  width: 45%;
-}
-.background .background__img-content .background__img {
-  max-width: 100%;
+  margin-top: -20px;
 }
 
 /*MISION Y VISION DE LA EMPRESA*/

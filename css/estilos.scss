@@ -37,16 +37,18 @@ $bgColorFooter:#4980ff;
 
 .boton {
     width: 200px;
+    height: 50px;
     text-decoration: none;
     text-align: center;
     border: 1px solid $borderBotonColor;
     border-radius: 10px;
     background-color: $bgBotonColor;
     color: $textbotonColor;
-    height: 40px;
     line-height: 30px;
     transition: all 1.5s;
     box-shadow: 0px 5px 5px 0px rgb(95, 95, 95);
+    font-size: 22px;
+    cursor: pointer;
 }
 
 .boton:hover {
@@ -132,7 +134,7 @@ a {
     width: 100%;
     height: 850px;
     .brackground__titular {
-        margin: 87px auto;
+        margin: 40px auto;
         width: 45%;
         .background__titulo {
             text-align: center;
@@ -143,17 +145,11 @@ a {
             text-align: justify;
             color: white;
         }
-        .boton {
-            width: 200px !important;
-            height: 50px !important;
-        }
     }
-    .background__img-content {
+    .background__img {
+        max-width: 40%;
         margin: auto;
-        width: 45%;
-        .background__img {
-            max-width: 100%;
-        }
+        margin-top: -20px;
     }
 }
 
