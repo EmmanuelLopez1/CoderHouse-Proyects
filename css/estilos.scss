@@ -75,18 +75,16 @@ a {
     HEADER
 */
 
-header {
+.header {
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #F8F9FA;
-    .logo {
-        .logo__img {
-            width: 60px;
-            height: 60px;
-            border-radius: 99px;
-        }
+    .header__logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 99px;
     }
     .navbar {
         .container-fluid {
@@ -121,39 +119,40 @@ header {
 
 /*IMAGEN PRINCIPAL Y ENCABEZADO*/
 
-.fondo-principal {
+.contenedor {
     width: 100%;
-    .fondo-principal__img {
-        width: 100%;
-        height: 500px;
-        position: relative;
-        margin: auto;
+    max-width: 100vw;
+}
+
+.background {
+    display: flex;
+    background-image: url("../img/Hosting\ Company/imagenes/ondas.png"), linear-gradient(237deg, #46b3ff 0%, #0752fe 100%);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 850px;
+    .brackground__titular {
+        margin: 87px auto;
+        width: 45%;
+        .background__titulo {
+            text-align: center;
+            color: white;
+        }
+        .background__parrafo {
+            font-size: 26px;
+            text-align: justify;
+            color: white;
+        }
+        .boton {
+            width: 200px !important;
+            height: 50px !important;
+        }
     }
-    .fondo-principal__encabezado {
-        position: absolute;
-        width: 80%;
-        left: 0;
-        right: 0;
+    .background__img-content {
         margin: auto;
-        margin-top: -400px;
-        .fondo-principal__titulo {
-            color: white;
-            text-align: center;
-        }
-        .fondo-principal__subtitulo {
-            color: white;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .fondo-principal__boton {
-            display: block;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-        hr {
-            border: 1px solid white;
-            border-radius: 300px/10px;
+        width: 45%;
+        .background__img {
+            max-width: 100%;
         }
     }
 }

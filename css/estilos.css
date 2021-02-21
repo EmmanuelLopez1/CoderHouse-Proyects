@@ -54,75 +54,76 @@ a {
 /*
     HEADER
 */
-header {
+.header {
   padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #F8F9FA;
 }
-header .logo .logo__img {
+.header .header__logo {
   width: 60px;
   height: 60px;
   border-radius: 99px;
 }
-header .navbar .container-fluid .collapse .navbar-nav .nav-item {
+.header .navbar .container-fluid .collapse .navbar-nav .nav-item {
   margin: 0px 10px;
 }
-header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+.header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
   color: black;
   font-size: 22px;
 }
-header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover {
+.header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover {
   background-color: #E02084;
   padding: 0px 5px;
   transition: all 0.5s;
 }
-header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
+.header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   color: white;
 }
 @media (max-width: 994px) {
-  header .navbar .container-fluid .collapse .navbar-nav .nav-item {
+  .header .navbar .container-fluid .collapse .navbar-nav .nav-item {
     margin: 10px 0px;
   }
 }
 
 /*IMAGEN PRINCIPAL Y ENCABEZADO*/
-.fondo-principal {
+.contenedor {
   width: 100%;
+  max-width: 100vw;
 }
-.fondo-principal .fondo-principal__img {
+
+.background {
+  display: flex;
+  background-image: url("../img/Hosting Company/imagenes/ondas.png"), linear-gradient(237deg, #46b3ff 0%, #0752fe 100%);
+  background-position: bottom center;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 500px;
-  position: relative;
-  margin: auto;
+  height: 850px;
 }
-.fondo-principal .fondo-principal__encabezado {
-  position: absolute;
-  width: 80%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  margin-top: -400px;
+.background .brackground__titular {
+  margin: 87px auto;
+  width: 45%;
 }
-.fondo-principal .fondo-principal__encabezado .fondo-principal__titulo {
-  color: white;
+.background .brackground__titular .background__titulo {
   text-align: center;
-}
-.fondo-principal .fondo-principal__encabezado .fondo-principal__subtitulo {
   color: white;
-  text-align: center;
-  margin-bottom: 20px;
 }
-.fondo-principal .fondo-principal__encabezado .fondo-principal__boton {
-  display: block;
-  left: 0;
-  right: 0;
+.background .brackground__titular .background__parrafo {
+  font-size: 26px;
+  text-align: justify;
+  color: white;
+}
+.background .brackground__titular .boton {
+  width: 200px !important;
+  height: 50px !important;
+}
+.background .background__img-content {
   margin: auto;
+  width: 45%;
 }
-.fondo-principal .fondo-principal__encabezado hr {
-  border: 1px solid white;
-  border-radius: 300px/10px;
+.background .background__img-content .background__img {
+  max-width: 100%;
 }
 
 /*MISION Y VISION DE LA EMPRESA*/
