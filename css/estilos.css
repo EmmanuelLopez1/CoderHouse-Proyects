@@ -31,15 +31,10 @@
   font-size: 22px;
   cursor: pointer;
 }
-
 .boton:hover {
   color: white;
   background-color: #A34C96;
   transform: scale(1.1);
-}
-
-.boton h2 {
-  text-align: center;
 }
 
 p {
@@ -63,7 +58,7 @@ a {
   align-items: center;
   background-color: #F8F9FA;
 }
-.header .header__logo {
+.header__logo {
   width: 60px;
   height: 60px;
   border-radius: 99px;
@@ -123,10 +118,10 @@ a {
 }
 
 /*MISION Y VISION DE LA EMPRESA*/
-.objetivo-empresarial {
+.informacion {
   margin-bottom: 50px;
 }
-.objetivo-empresarial .objetivo-empresarial__tarjeta {
+.informacion .informacion__tarjeta {
   border: 1px solid black;
   border-radius: 5px;
   box-shadow: 5px 5px 0px 0px #ccc;
@@ -136,42 +131,42 @@ a {
   text-align: center;
   transition: all 1s;
 }
-.objetivo-empresarial .objetivo-empresarial__tarjeta .objetivo-empresarial__titulo {
+.informacion .informacion__tarjeta .informacion__titulo {
   margin-top: 20px;
 }
-.objetivo-empresarial .objetivo-empresarial__tarjeta .objetivo-empresarial__img {
+.informacion .informacion__tarjeta .informacion__img {
   width: 200px;
   height: 200px;
   margin: 20px 0px;
 }
-.objetivo-empresarial .objetivo-empresarial__tarjeta .objetivo-empresarial__parrafo {
+.informacion .informacion__tarjeta .informacion__parrafo {
   text-align: justify;
   margin: 0px 20px 20px 20px;
 }
-.objetivo-empresarial .objetivo-empresarial__tarjeta:target {
+.informacion .informacion__tarjeta:target {
   background-color: #E02084;
 }
-.objetivo-empresarial .objetivo-empresarial__tarjeta:hover {
+.informacion .informacion__tarjeta:hover {
   background-color: #E02084;
   color: white;
   transform: scale(1.05);
 }
 
 /*PRESENTACION DE LA EMPRESA*/
-.presentacion {
+.video {
   display: block;
   width: 80%;
   text-align: center;
   margin: 80px auto;
 }
-.presentacion .presentacion__video {
+.video__pelicula {
   margin-top: 30px;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
 }
 
 @media (min-width: 768px) {
-  .presentacion {
+  .video {
     width: 50%;
     margin: 30px auto;
   }
@@ -179,30 +174,30 @@ a {
 /*
     REPRODUCTOR DE VIDEO ELEMENTOS
 */
-.presentacion .presentacion__video .vjs-control-bar {
+.video__pelicula .vjs-control-bar {
   background: white;
   color: #E02084;
 }
-.presentacion .presentacion__video .vjs-play-progress {
+.video__pelicula .vjs-play-progress {
   background: #A34C96;
 }
-.presentacion .presentacion__video .vjs-volume-level {
+.video__pelicula .vjs-volume-level {
   background-color: #A34C96;
 }
-.presentacion .presentacion__video .vjs-slider {
+.video__pelicula .vjs-slider {
   background-color: #E02084;
 }
-.presentacion .presentacion__video .vjs-tech:hover ~ .vjs-big-play-button {
+.video__pelicula .vjs-tech:hover ~ .vjs-big-play-button {
   background-color: rgba(0, 0, 0, 0.1);
 }
-.presentacion .presentacion__video .vjs-big-play-button {
+.video__pelicula .vjs-big-play-button {
   width: 50px;
   height: 50px;
   line-height: 45px;
   border-radius: 99px;
   background-color: rgba(0, 0, 0, 0.1);
 }
-.presentacion .presentacion__video .vjs-big-play-button:hover {
+.video__pelicula .vjs-big-play-button:hover {
   transform: scale(1.1);
   background-color: rgba(0, 0, 0, 0.2);
   transition: all 0.5s;
@@ -214,7 +209,7 @@ a {
     display: grid;
     grid-template-columns: 50% 50%;
   }
-  .objetivo-empresarial .objetivo-empresarial__tarjeta {
+  .objetivo-empresarial__tarjeta {
     width: 85%;
   }
 }
@@ -226,28 +221,28 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.footer .footer__redes-sociales {
+.footer__redes-sociales {
   text-align: center;
   margin-bottom: 30px;
 }
-.footer .footer__redes-sociales .footer__titulo {
+.footer__redes-sociales .footer__titulo {
   color: white;
   margin-bottom: 30px;
 }
-.footer .footer__redes-sociales .footer__red-social {
+.footer__redes-sociales .footer__red-social {
   width: 50px;
   cursor: pointer;
   color: white;
   text-decoration: none;
 }
-.footer .footer__redes-sociales .footer__img {
+.footer__redes-sociales .footer__img {
   margin: 0px 10px;
   width: 50px;
   border-radius: 5px;
   transition: all 0.5s;
   cursor: pointer;
 }
-.footer .footer__redes-sociales .footer__img:hover {
+.footer__redes-sociales .footer__img:hover {
   transform: scale(1.1);
 }
 .footer .footer__inf-contacto {
@@ -426,7 +421,7 @@ a {
   max-height: 130px;
   min-height: 130px;
 }
-.contacto .contacto__formulario .contacto__boton {
+.contacto .contacto__formulario .contacto__btn {
   margin: auto;
 }
 .contacto .contacto__formulario .contacto__checkbox {
@@ -438,14 +433,11 @@ a {
 .contacto .contacto__formulario .contacto__checkbox:hover {
   cursor: pointer;
 }
-.contacto .contacto__alternativo {
+.contacto .contacto__telefono {
   text-align: center;
 }
-.contacto .contacto__alternativo .contacto__alternativo-boton {
+.contacto .contacto__telefono-btn {
   margin-top: 15px;
-}
-.contacto .contacto__alternativo .contacto__boton {
-  margin: auto;
 }
 
 @media (min-width: 1024px) {

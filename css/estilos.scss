@@ -49,16 +49,11 @@ $bgColorFooter:#4980ff;
     box-shadow: 0px 5px 5px 0px rgb(95, 95, 95);
     font-size: 22px;
     cursor: pointer;
-}
-
-.boton:hover {
-    color: white;
-    background-color: $bgBotonColorHover;
-    transform: scale(1.1);
-}
-
-.boton h2 {
-    text-align: center;
+    &:hover {
+        color: white;
+        background-color: $bgBotonColorHover;
+        transform: scale(1.1);
+    }
 }
 
 p {
@@ -83,7 +78,7 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: #F8F9FA;
-    .header__logo {
+    &__logo {
         width: 60px;
         height: 60px;
         border-radius: 99px;
@@ -156,9 +151,9 @@ a {
 
 /*MISION Y VISION DE LA EMPRESA*/
 
-.objetivo-empresarial {
+.informacion {
     margin-bottom: 50px;
-    .objetivo-empresarial__tarjeta {
+    .informacion__tarjeta {
         border: 1px solid black;
         border-radius: 5px;
         box-shadow: 5px 5px 0px 0px #ccc;
@@ -167,38 +162,38 @@ a {
         margin-top: 30px;
         text-align: center;
         transition: all 1s;
-        .objetivo-empresarial__titulo {
+        .informacion__titulo {
             margin-top: $espaciadoInterno;
         }
-        .objetivo-empresarial__img {
+        .informacion__img {
             width: 200px;
             height: 200px;
             margin: 20px 0px;
         }
-        .objetivo-empresarial__parrafo {
+        .informacion__parrafo {
             text-align: justify;
             margin: 0px $espaciadoInterno $espaciadoInterno $espaciadoInterno;
         }
-    }
-    .objetivo-empresarial__tarjeta:target {
-        background-color: #E02084;
-    }
-    .objetivo-empresarial__tarjeta:hover {
-        background-color: $bgBotonColor;
-        color: white;
-        transform: scale(1.05);
+        &:target {
+            background-color: #E02084;
+        }
+        &:hover {
+            background-color: $bgBotonColor;
+            color: white;
+            transform: scale(1.05);
+        }
     }
 }
 
 
 /*PRESENTACION DE LA EMPRESA*/
 
-.presentacion {
+.video {
     display: block;
     width: 80%;
     text-align: center;
     margin: 80px auto;
-    .presentacion__video {
+    &__pelicula {
         margin-top: 30px;
         box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, .5);
         border-radius: 5px;
@@ -206,7 +201,7 @@ a {
 }
 
 @media(min-width:768px) {
-    .presentacion {
+    .video {
         width: 50%;
         margin: 30px auto;
     }
@@ -217,8 +212,8 @@ a {
     REPRODUCTOR DE VIDEO ELEMENTOS
 */
 
-.presentacion {
-    .presentacion__video {
+.video {
+    &__pelicula {
         .vjs-control-bar {
             background: white;
             color: $bgBotonColor;
@@ -257,7 +252,7 @@ a {
     .objetivo-empresarial {
         display: grid;
         grid-template-columns: 50% 50%;
-        .objetivo-empresarial__tarjeta {
+        &__tarjeta {
             width: 85%;
         }
     }
@@ -272,7 +267,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .footer__redes-sociales {
+    &__redes-sociales {
         text-align: center;
         margin-bottom: 30px;
         .footer__titulo {
@@ -482,7 +477,7 @@ a {
             max-height: 130px;
             min-height: 130px;
         }
-        .contacto__boton {
+        .contacto__btn {
             margin: auto;
         }
         .contacto__checkbox {
@@ -495,13 +490,10 @@ a {
             cursor: pointer;
         }
     }
-    .contacto__alternativo {
+    .contacto__telefono {
         text-align: center;
-        .contacto__alternativo-boton {
+        &-btn {
             margin-top: 15px;
-        }
-        .contacto__boton {
-            margin: auto;
         }
     }
 }
