@@ -12,10 +12,11 @@ $fontGaramon:'EB Garamond';
 
 /*BOTONES*/
 
-$bgBotonColor:#E02084;
-$bgBotonColorHover:#A34C96;
+$bg-lightpink:#E02084;
+$bg-btn-color-hover:#A34C96;
 $borderBotonColor:white;
 $textbotonColor:white;
+$box-shadow:0px 5px 5px 0px #ccc;
 
 /*TARJETAS*/
 
@@ -42,16 +43,16 @@ $bgColorFooter:#4980ff;
     text-align: center;
     border: 1px solid $borderBotonColor;
     border-radius: 10px;
-    background-color: $bgBotonColor;
+    background-color: $bg-lightpink;
     color: $textbotonColor;
     line-height: 30px;
     transition: all 1.5s;
-    box-shadow: 0px 5px 5px 0px rgb(95, 95, 95);
+    box-shadow: $box-shadow;
     font-size: 22px;
     cursor: pointer;
     &:hover {
         color: white;
-        background-color: $bgBotonColorHover;
+        background-color: $bg-btn-color-hover;
         transform: scale(1.1);
     }
 }
@@ -59,6 +60,7 @@ $bgColorFooter:#4980ff;
 p {
     font-family: $fontGaramon;
     font-size: 24px;
+    text-align: justify;
 }
 
 a {
@@ -72,13 +74,13 @@ a {
     HEADER
 */
 
-.header {
+header {
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #F8F9FA;
-    &__logo {
+    .header__logo {
         width: 60px;
         height: 60px;
         border-radius: 99px;
@@ -95,7 +97,7 @@ a {
                         }
                     }
                     .nav-item:hover {
-                        background-color: $bgBotonColor;
+                        background-color: $bg-lightpink;
                         padding: 0px 5px;
                         transition: all .5s;
                         a {
@@ -116,11 +118,6 @@ a {
 
 /*IMAGEN PRINCIPAL Y ENCABEZADO*/
 
-.contenedor {
-    width: 100%;
-    max-width: 100vw;
-}
-
 .background {
     display: flex;
     background-image: url("../img/Hosting\ Company/imagenes/ondas.png"), linear-gradient(237deg, #46b3ff 0%, #0752fe 100%);
@@ -132,12 +129,10 @@ a {
         margin: 40px auto;
         width: 45%;
         .background__titulo {
-            text-align: center;
             color: white;
         }
         .background__parrafo {
             font-size: 26px;
-            text-align: justify;
             color: white;
         }
     }
@@ -152,33 +147,28 @@ a {
 /*MISION Y VISION DE LA EMPRESA*/
 
 .informacion {
-    margin-bottom: 50px;
     .informacion__tarjeta {
         border: 1px solid black;
         border-radius: 5px;
-        box-shadow: 5px 5px 0px 0px #ccc;
+        box-shadow: $box-shadow;
         width: 80%;
         margin: auto;
         margin-top: 30px;
-        text-align: center;
         transition: all 1s;
         .informacion__titulo {
             margin-top: $espaciadoInterno;
         }
         .informacion__img {
+            display: block;
             width: 200px;
             height: 200px;
-            margin: 20px 0px;
+            margin: 20px auto;
         }
         .informacion__parrafo {
-            text-align: justify;
             margin: 0px $espaciadoInterno $espaciadoInterno $espaciadoInterno;
         }
-        &:target {
-            background-color: #E02084;
-        }
         &:hover {
-            background-color: $bgBotonColor;
+            background-color: $bg-lightpink;
             color: white;
             transform: scale(1.05);
         }
@@ -191,7 +181,6 @@ a {
 .video {
     display: block;
     width: 80%;
-    text-align: center;
     margin: 80px auto;
     &__pelicula {
         margin-top: 30px;
@@ -213,19 +202,19 @@ a {
 */
 
 .video {
-    &__pelicula {
+    .video__pelicula {
         .vjs-control-bar {
             background: white;
-            color: $bgBotonColor;
+            color: $bg-lightpink;
         }
         .vjs-play-progress {
-            background: $bgBotonColorHover;
+            background: $bg-btn-color-hover;
         }
         .vjs-volume-level {
-            background-color: $bgBotonColorHover;
+            background-color: $bg-btn-color-hover;
         }
         .vjs-slider {
-            background-color: $bgBotonColor;
+            background-color: $bg-lightpink;
         }
         .vjs-tech:hover~.vjs-big-play-button {
             background-color: rgba(0, 0, 0, .1);
@@ -249,7 +238,7 @@ a {
 /*RESPONSIVE TARJETAS*/
 
 @media(min-width: 768px) {
-    .objetivo-empresarial {
+    .informacion {
         display: grid;
         grid-template-columns: 50% 50%;
         &__tarjeta {
@@ -262,13 +251,12 @@ a {
 /*FOOTER*/
 
 .footer {
-    background-color: $bgBotonColor;
+    background-color: $bg-lightpink;
     padding: 30px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     &__redes-sociales {
-        text-align: center;
         margin-bottom: 30px;
         .footer__titulo {
             color: white;
@@ -294,7 +282,6 @@ a {
     .footer__inf-contacto {
         display: flex;
         flex-direction: column;
-        text-align: center;
         .footer__link {
             color: white;
             text-decoration: none;
@@ -341,7 +328,6 @@ a {
 */
 
 .servicios {
-    margin-bottom: 50px;
     .servicios__presentacion {
         width: 100%;
         margin: 40px auto;
@@ -352,13 +338,11 @@ a {
             margin-bottom: 30px;
         }
         .servicios__parrafo {
-            text-align: justify;
             width: 80%;
             margin: 0px auto;
         }
     }
     .servicios__titulo {
-        text-align: center;
         margin-bottom: 20px;
     }
     .servicios__cards {
@@ -368,7 +352,6 @@ a {
         .servicios__card {
             height: auto;
             margin: auto;
-            margin-bottom: 30px;
             height: auto !important;
             .servicios__img {
                 width: 80px;
@@ -379,11 +362,7 @@ a {
                 transform: scale(1.1);
             }
             .servicios__card-title {
-                text-align: center;
                 color: gold;
-            }
-            .servicios__card-text {
-                text-align: justify;
             }
         }
     }
@@ -396,7 +375,6 @@ a {
 
 @media(min-width:786px) {
     .servicios {
-        text-align: center;
         .servicios__cards {
             display: grid;
             grid-template-areas: "subtitulo subtitulo";
@@ -414,15 +392,12 @@ a {
 
 @media(min-width:1024px) {
     .servicios {
-        text-align: center;
-        margin-bottom: 100px;
         .servicios__cards {
             width: 90%;
             grid-template-areas: "subtitulo subtitulo subtitulo subtitulo";
             grid-template-columns: 22% 22% 22% 22%;
             grid-gap: 40px;
             justify-content: center;
-            text-align: center;
             .servicios__card {
                 max-width: 100%;
                 height: 310px;
@@ -446,14 +421,11 @@ a {
     margin: auto;
     display: grid;
     justify-content: center;
-    margin-bottom: 50px;
     .contacto__formulario {
         display: grid;
         grid-template-columns: 400px;
         grid-template-rows: repeat(5, 35px);
         grid-gap: 20px;
-        margin-bottom: 50px;
-        text-align: center;
         padding-top: 50px;
         .contacto__parrafo {
             font-size: 22px;
@@ -461,9 +433,6 @@ a {
         .contacto__newsletter {
             display: flex;
             align-items: center;
-            .contacto__question {
-                margin-right: 10px;
-            }
         }
         .contacto__input {
             outline: none;
@@ -491,7 +460,6 @@ a {
         }
     }
     .contacto__telefono {
-        text-align: center;
         &-btn {
             margin-top: 15px;
         }
