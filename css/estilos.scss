@@ -20,7 +20,6 @@ $box-shadow:0px 5px 5px 0px #ccc;
 
 /*TARJETAS*/
 
-$espaciadoInterno:20px;
 $bgTarjetas:#4980ff;
 
 /*FOOTER*/
@@ -153,19 +152,12 @@ header {
         box-shadow: $box-shadow;
         width: 80%;
         margin: auto;
-        margin-top: 30px;
         transition: all 1s;
-        .informacion__titulo {
-            margin-top: $espaciadoInterno;
-        }
         .informacion__img {
             display: block;
             width: 200px;
             height: 200px;
             margin: 20px auto;
-        }
-        .informacion__parrafo {
-            margin: 0px $espaciadoInterno $espaciadoInterno $espaciadoInterno;
         }
         &:hover {
             background-color: $bg-lightpink;
@@ -183,7 +175,6 @@ header {
     width: 80%;
     margin: 80px auto;
     &__pelicula {
-        margin-top: 30px;
         box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, .5);
         border-radius: 5px;
     }
@@ -257,10 +248,8 @@ header {
     flex-direction: column;
     align-items: center;
     &__redes-sociales {
-        margin-bottom: 30px;
         .footer__titulo {
             color: white;
-            margin-bottom: 30px;
         }
         .footer__red-social {
             width: 50px;
@@ -330,12 +319,10 @@ header {
 .servicios {
     .servicios__presentacion {
         width: 100%;
-        margin: 40px auto;
         .servicios__presentacion-img {
             width: 80%;
             display: block;
             margin: auto;
-            margin-bottom: 30px;
         }
         .servicios__parrafo {
             width: 80%;
@@ -348,7 +335,6 @@ header {
     .servicios__cards {
         width: 80%;
         margin: auto;
-        margin-top: 30px;
         .servicios__card {
             height: auto;
             margin: auto;
@@ -356,7 +342,6 @@ header {
             .servicios__img {
                 width: 80px;
                 margin: auto;
-                margin-top: 30px;
             }
             .servicios__img:hover {
                 transform: scale(1.1);
@@ -426,7 +411,6 @@ header {
         grid-template-columns: 400px;
         grid-template-rows: repeat(5, 35px);
         grid-gap: 20px;
-        padding-top: 50px;
         .contacto__parrafo {
             font-size: 22px;
         }
@@ -457,11 +441,6 @@ header {
         }
         .contacto__checkbox:hover {
             cursor: pointer;
-        }
-    }
-    .contacto__telefono {
-        &-btn {
-            margin-top: 15px;
         }
     }
 }
