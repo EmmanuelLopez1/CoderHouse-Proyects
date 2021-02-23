@@ -18,6 +18,7 @@
 .boton {
   width: 200px;
   height: 50px;
+  margin: auto;
   text-decoration: none;
   text-align: center;
   border: 1px solid white;
@@ -50,6 +51,23 @@ a {
 
 .title {
   text-align: center;
+}
+
+/*
+    CONTENEDOR
+*/
+.content, .content-index {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-index {
+  width: 100%;
 }
 
 /*
@@ -252,9 +270,6 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
     padding: 30px 0px;
     justify-content: center;
   }
-  .footer .footer__maps {
-    margin-top: 0px;
-  }
 }
 /*
     PAGINA DE SERVICIOS
@@ -263,21 +278,15 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   width: 100%;
 }
 .servicios .servicios__presentacion .servicios__presentacion-img {
-  width: 80%;
+  width: 100%;
   display: block;
-}
-.servicios .servicios__presentacion .servicios__parrafo {
-  width: 80%;
 }
 .servicios .servicios__cards {
   width: 80%;
 }
 .servicios .servicios__cards .servicios__card {
-  height: auto;
   height: auto !important;
-}
-.servicios .servicios__cards .servicios__card .servicios__img {
-  width: 80px;
+  margin: auto;
 }
 .servicios .servicios__cards .servicios__card .servicios__img:hover {
   transform: scale(1.1);
