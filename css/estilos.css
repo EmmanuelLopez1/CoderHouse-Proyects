@@ -16,6 +16,7 @@
 }
 
 .boton {
+  display: block;
   width: 200px;
   height: 50px;
   margin: auto;
@@ -54,7 +55,7 @@ a {
 }
 
 /*
-    CONTENEDOR
+    CONTENt
 */
 .content, .content-index {
   padding-top: 50px;
@@ -67,9 +68,13 @@ a {
 }
 
 .content-index {
-  width: 100%;
+  width: 80%;
+  padding-top: 0px;
 }
 
+/*
+
+*/
 /*
     HEADER
 */
@@ -109,6 +114,8 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 /*IMAGEN PRINCIPAL Y ENCABEZADO*/
 .background {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-image: url("../img/Hosting Company/imagenes/ondas.png"), linear-gradient(237deg, #46b3ff 0%, #0752fe 100%);
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -116,19 +123,19 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   height: 850px;
 }
 .background .brackground__titular {
+  order: 2;
   margin: 40px auto;
-  width: 45%;
+  width: 80%;
 }
 .background .brackground__titular .background__titulo {
   color: white;
 }
 .background .brackground__titular .background__parrafo {
-  font-size: 26px;
   color: white;
 }
 .background .background__img {
+  order: 1;
   max-width: 40%;
-  margin-top: -20px;
 }
 
 /*MISION Y VISION DE LA EMPRESA*/
@@ -142,7 +149,6 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   display: block;
   width: 200px;
   height: 200px;
-  margin: 20px auto;
 }
 .informacion .informacion__tarjeta:hover {
   background-color: #E02084;
@@ -153,8 +159,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 /*PRESENTACION DE LA EMPRESA*/
 .video {
   display: block;
-  width: 80%;
-  margin: 80px auto;
+  width: 100%;
 }
 .video__pelicula {
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
@@ -227,7 +232,6 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   text-decoration: none;
 }
 .footer__redes-sociales .footer__img {
-  margin: 0px 10px;
   width: 50px;
   border-radius: 5px;
   transition: all 0.5s;
@@ -250,7 +254,6 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 }
 .footer .footer__maps {
   width: auto;
-  margin-top: 30px;
   border-radius: 10px;
   outline: none;
 }
@@ -286,7 +289,6 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 }
 .servicios .servicios__cards .servicios__card {
   height: auto !important;
-  margin: auto;
 }
 .servicios .servicios__cards .servicios__card .servicios__img:hover {
   transform: scale(1.1);
@@ -305,7 +307,6 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
     grid-template-columns: 50% 50%;
   }
   .servicios .servicios__cards .servicios__card {
-    margin: 10px auto;
     height: 330px;
   }
   .servicios .servicios__cards .servicios__subtitulo {
@@ -364,8 +365,6 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   min-height: 130px;
 }
 .contacto .contacto__formulario .contacto__checkbox {
-  margin-left: 10px;
-  margin-top: -13px;
   width: 20px;
   height: 20px;
 }
