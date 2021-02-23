@@ -31,7 +31,6 @@ $bgColorFooter:#4980ff;
 */
 
 * {
-    margin: 0px;
     padding: 0px;
 }
 
@@ -64,8 +63,12 @@ p {
 
 a {
     font-family: $fontGaramon !important;
-    font-size: 18px;
+    font-size: 24px;
     text-decoration: none;
+}
+
+.title {
+    text-align: center;
 }
 
 
@@ -137,7 +140,6 @@ header {
     }
     .background__img {
         max-width: 40%;
-        margin: auto;
         margin-top: -20px;
     }
 }
@@ -150,8 +152,6 @@ header {
         border: 1px solid black;
         border-radius: 5px;
         box-shadow: $box-shadow;
-        width: 80%;
-        margin: auto;
         transition: all 1s;
         .informacion__img {
             display: block;
@@ -282,7 +282,6 @@ header {
     }
     .footer__maps {
         width: auto;
-        margin: auto;
         margin-top: 30px;
         border-radius: 10px;
         outline: none;
@@ -322,26 +321,18 @@ header {
         .servicios__presentacion-img {
             width: 80%;
             display: block;
-            margin: auto;
         }
         .servicios__parrafo {
             width: 80%;
-            margin: 0px auto;
         }
-    }
-    .servicios__titulo {
-        margin-bottom: 20px;
     }
     .servicios__cards {
         width: 80%;
-        margin: auto;
         .servicios__card {
             height: auto;
-            margin: auto;
             height: auto !important;
             .servicios__img {
                 width: 80px;
-                margin: auto;
             }
             .servicios__img:hover {
                 transform: scale(1.1);
@@ -403,7 +394,6 @@ header {
     width: 80%;
     right: 0;
     left: 0;
-    margin: auto;
     display: grid;
     justify-content: center;
     .contacto__formulario {
@@ -429,9 +419,6 @@ header {
             min-width: 100%;
             max-height: 130px;
             min-height: 130px;
-        }
-        .contacto__btn {
-            margin: auto;
         }
         .contacto__checkbox {
             margin-left: 10px;
