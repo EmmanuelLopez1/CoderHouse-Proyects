@@ -69,19 +69,16 @@ a {
     text-decoration: none;
 }
 
-.title {
-    text-align: center;
-}
-
 
 /*
-    CONTENt
+    CONTENT
 */
 
 .content {
     padding-top: 50px;
     padding-bottom: 100px;
     width: 80%;
+    height: auto !important;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -90,19 +87,37 @@ a {
 
 .content-index {
     @extend .content;
-    width: 80%;
     padding-top: 0px;
 }
 
 
 /*
-
+    TITULOS Y SUBTITULOS
 */
+
+.titulo {
+    margin: 25px 0px;
+    text-align: center;
+    color: black;
+}
+
+.titulo-white {
+    @extend .titulo;
+    color: white;
+}
 
 
 /*
-    HEADER
+    SECCIONES
 */
+
+.seccion {
+    margin: 30px 0px;
+}
+
+.seccion:nth-last-child(1) {
+    margin-bottom: 0px;
+}
 
 header {
     padding: 15px;
@@ -146,6 +161,9 @@ header {
 }
 
 
+/*INDEX*/
+
+
 /*IMAGEN PRINCIPAL Y ENCABEZADO*/
 
 .background {
@@ -159,10 +177,10 @@ header {
     height: 850px;
     .brackground__titular {
         order: 2;
-        margin: 40px auto;
+        margin: 0px auto;
         width: 80%;
         .background__titulo {
-            color: white;
+            margin-top: 0px;
         }
         .background__parrafo {
             color: white;
@@ -170,29 +188,8 @@ header {
     }
     .background__img {
         order: 1;
-        max-width: 40%;
-    }
-}
-
-
-/*MISION Y VISION DE LA EMPRESA*/
-
-.informacion {
-    .informacion__tarjeta {
-        border: 1px solid black;
-        border-radius: 5px;
-        box-shadow: $box-shadow;
-        transition: all 1s;
-        .informacion__img {
-            display: block;
-            width: 200px;
-            height: 200px;
-        }
-        &:hover {
-            background-color: $bg-lightpink;
-            color: white;
-            transform: scale(1.05);
-        }
+        max-width: 60%;
+        margin: 0px auto;
     }
 }
 
@@ -200,7 +197,6 @@ header {
 /*PRESENTACION DE LA EMPRESA*/
 
 .video {
-    display: block;
     width: 100%;
     &__pelicula {
         box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, .5);
@@ -211,7 +207,6 @@ header {
 @media(min-width:768px) {
     .video {
         width: 50%;
-        margin: 30px auto;
     }
 }
 
@@ -254,17 +249,33 @@ header {
 }
 
 
-/*RESPONSIVE TARJETAS*/
+/*MISION Y VISION DE LA EMPRESA*/
 
-@media(min-width: 768px) {
-    .informacion {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        &__tarjeta {
-            width: 85%;
+.informacion {
+    .informacion__tarjeta {
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: $box-shadow;
+        transition: all 1s;
+        .informacion__img {
+            display: block;
+            margin: auto;
+            width: 200px;
+        }
+        .informacion__parrafo {
+            margin: 20px;
+        }
+        &:hover {
+            background-color: $bg-lightpink;
+            color: white;
+            transform: scale(1.05);
         }
     }
 }
+
+
+/*RESPONSIVE TARJETAS*/
 
 
 /*FOOTER*/
@@ -275,25 +286,23 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    &__redes-sociales {
-        .footer__titulo {
-            color: white;
-        }
-        .footer__red-social {
-            width: 50px;
-            cursor: pointer;
-            color: white;
-            text-decoration: none;
-        }
-        .footer__img {
-            width: 50px;
-            border-radius: 5px;
-            transition: all .5s;
-            cursor: pointer;
-        }
-        .footer__img:hover {
-            transform: scale(1.1);
-        }
+    .footer__titulo {
+        color: white;
+    }
+    .footer__red-social {
+        width: 50px;
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+    }
+    .footer__img {
+        width: 50px;
+        border-radius: 5px;
+        transition: all .5s;
+        cursor: pointer;
+    }
+    .footer__img:hover {
+        transform: scale(1.1);
     }
     .footer__inf-contacto {
         display: flex;
@@ -304,7 +313,7 @@ header {
             transition: all 1s;
         }
         .footer__link:hover {
-            font-size: 20px;
+            transform: scale(1.1);
         }
     }
     .footer__maps {
