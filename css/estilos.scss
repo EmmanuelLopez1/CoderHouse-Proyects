@@ -304,13 +304,13 @@ header {
             color: white;
         }
     }
-    .footer__maps {
+    &__maps {
         width: auto;
-        .footer__mapa {
-            border-radius: 5px;
-            width: 100%;
-            height: 200px;
-        }
+    }
+    &__mapa {
+        border-radius: 5px;
+        width: 100%;
+        height: 200px;
     }
 }
 

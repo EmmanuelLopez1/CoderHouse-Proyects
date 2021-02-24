@@ -249,10 +249,10 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   transform: scale(1.1);
   color: white;
 }
-.footer .footer__maps {
+.footer__maps {
   width: auto;
 }
-.footer .footer__maps .footer__mapa {
+.footer__mapa {
   border-radius: 5px;
   width: 100%;
   height: 200px;
