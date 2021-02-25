@@ -19,7 +19,7 @@
   display: block;
   width: 200px;
   height: 50px;
-  margin: auto;
+  margin: 15px auto;
   text-decoration: none;
   text-align: center;
   border: 1px solid white;
@@ -75,11 +75,19 @@ body a {
 .titulo, .titulo-white {
   margin: 25px 0px;
   text-align: center;
-  color: black;
 }
 
 .titulo-white {
   color: white;
+}
+
+/*
+    ESTILOS CON FLEX.
+*/
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*
@@ -228,8 +236,6 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 .footer {
   background-color: #E02084;
   padding: 30px 0px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 .footer__red-social {
@@ -264,10 +270,6 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 @media (min-width: 786px) {
   .footer {
     display: grid;
-    grid-template-columns: repeat(3, 30%);
-    grid-gap: 20px;
-    padding: 30px 0px;
-    justify-content: center;
   }
 }
 /*
@@ -319,51 +321,37 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 /*
     PAGINA DE CONTACTO
 */
-.contacto {
-  width: 80%;
-  right: 0;
-  left: 0;
-  display: grid;
-  justify-content: center;
-}
-.contacto .contacto__formulario {
-  display: grid;
-  grid-template-columns: 400px;
-  grid-template-rows: repeat(5, 35px);
-  grid-gap: 20px;
-}
-.contacto .contacto__formulario .contacto__parrafo {
-  font-size: 22px;
-}
-.contacto .contacto__formulario .contacto__newsletter {
+.contacto .contacto__newsletter {
   display: flex;
   align-items: center;
 }
-.contacto .contacto__formulario .contacto__input {
+.contacto .contacto__input {
+  height: 50px;
   outline: none;
   padding-left: 5px;
+  margin: 10px 0px;
 }
-.contacto .contacto__formulario .contacto__textarea {
-  outline: none;
-  padding-left: 5px;
-  max-width: 100%;
-  min-width: 100%;
+.contacto .contacto__textarea {
   max-height: 130px;
   min-height: 130px;
 }
-.contacto .contacto__formulario .contacto__checkbox {
+.contacto .contacto__checkbox {
+  margin-left: 15px;
   width: 20px;
   height: 20px;
 }
-.contacto .contacto__formulario .contacto__checkbox:hover {
+.contacto .contacto__checkbox:hover {
   cursor: pointer;
+}
+.contacto .contacto__telefono {
+  width: 425px;
 }
 
 @media (min-width: 1024px) {
   .contacto {
-    width: 90%;
-    grid-template-columns: repeat(2, 48%);
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 /*
