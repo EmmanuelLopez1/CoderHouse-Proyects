@@ -38,15 +38,17 @@
   transform: scale(1.1);
 }
 
-p {
+body p {
+  margin: 0px;
   font-family: "EB Garamond";
   font-size: 24px;
   text-align: justify;
 }
-
-a {
+body a {
   font-family: "EB Garamond";
   font-size: 24px;
+  text-decoration: none;
+  color: white;
 }
 
 /*
@@ -55,7 +57,7 @@ a {
 .content, .content-index {
   padding-top: 50px;
   padding-bottom: 100px;
-  width: 80%;
+  width: 85%;
   height: auto !important;
   margin: auto;
   display: flex;
@@ -241,8 +243,6 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 }
 .footer__link {
   margin: 12px;
-  color: white;
-  text-decoration: none;
   transition: all 0.5s;
 }
 .footer__link:hover {
@@ -273,25 +273,20 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 /*
     PAGINA DE SERVICIOS
 */
-.servicios .servicios__presentacion {
-  width: 100%;
-}
-.servicios .servicios__presentacion .servicios__presentacion-img {
+.servicios .servicios__presentacion-img {
   width: 100%;
   display: block;
 }
-.servicios .servicios__cards {
-  width: 80%;
-}
-.servicios .servicios__cards .servicios__card {
+.servicios .servicios__card {
+  margin: 30px 20px 0px 20px;
   height: auto;
   padding: 20px;
 }
-.servicios .servicios__cards .servicios__card .servicios__img {
+.servicios .servicios__card .servicios__img {
   width: 150px;
   margin: auto;
 }
-.servicios .servicios__cards .servicios__card .servicios__img:hover {
+.servicios .servicios__card .servicios__img:hover {
   transform: scale(1.1);
 }
 
@@ -299,22 +294,20 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
     RESPONSIVE SERVICIOS CARDS
 */
 @media (min-width: 786px) {
-  .servicios .servicios__cards {
+  .servicios__cards {
     display: grid;
     grid-template-areas: "subtitulo subtitulo";
     grid-template-columns: 50% 50%;
   }
-  .servicios .servicios__cards .servicios__subtitulo {
+  .servicios__cards .servicios__subtitulo {
     grid-area: subtitulo;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .servicios .servicios__cards {
-    width: 90%;
+    width: 100%;
     grid-template-areas: "subtitulo subtitulo subtitulo subtitulo";
-    grid-template-columns: 22% 22% 22% 22%;
-    grid-gap: 40px;
-    justify-content: center;
+    grid-template-columns: 25% 25% 25% 25%;
   }
   .servicios .servicios__cards .servicios__card {
     max-width: 100%;

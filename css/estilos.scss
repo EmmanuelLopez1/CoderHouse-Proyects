@@ -57,15 +57,19 @@ $bgColorFooter:#4980ff;
     }
 }
 
-p {
-    font-family: $fontGaramon;
-    font-size: 24px;
-    text-align: justify;
-}
-
-a {
-    font-family: $fontGaramon;
-    font-size: 24px;
+body {
+    p {
+        margin: 0px;
+        font-family: $fontGaramon;
+        font-size: 24px;
+        text-align: justify;
+    }
+    a {
+        font-family: $fontGaramon;
+        font-size: 24px;
+        text-decoration: none;
+        color: white;
+    }
 }
 
 
@@ -76,7 +80,7 @@ a {
 .content {
     padding-top: 50px;
     padding-bottom: 100px;
-    width: 80%;
+    width: 85%;
     height: auto !important;
     margin: auto;
     display: flex;
@@ -296,8 +300,6 @@ header {
     }
     &__link {
         margin: 12px;
-        color: white;
-        text-decoration: none;
         transition: all .5s;
         &:hover {
             transform: scale(1.1);
@@ -335,25 +337,20 @@ header {
 */
 
 .servicios {
-    .servicios__presentacion {
+    .servicios__presentacion-img {
         width: 100%;
-        .servicios__presentacion-img {
-            width: 100%;
-            display: block;
-        }
+        display: block;
     }
-    .servicios__cards {
-        width: 80%;
-        .servicios__card {
-            height: auto;
-            padding: 20px;
-            .servicios__img {
-                width: 150px;
-                margin: auto;
-            }
-            .servicios__img:hover {
-                transform: scale(1.1);
-            }
+    .servicios__card {
+        margin: 30px 20px 0px 20px;
+        height: auto;
+        padding: 20px;
+        .servicios__img {
+            width: 150px;
+            margin: auto;
+        }
+        .servicios__img:hover {
+            transform: scale(1.1);
         }
     }
 }
@@ -364,26 +361,23 @@ header {
 */
 
 @media(min-width:786px) {
-    .servicios {
-        .servicios__cards {
-            display: grid;
-            grid-template-areas: "subtitulo subtitulo";
-            grid-template-columns: 50% 50%;
-            .servicios__subtitulo {
-                grid-area: subtitulo;
-            }
+    .servicios__cards {
+        display: grid;
+        grid-template-areas: "subtitulo subtitulo";
+        grid-template-columns: 50% 50%;
+        .servicios__subtitulo {
+            grid-area: subtitulo;
         }
     }
 }
 
-@media(min-width:1024px) {
+@media(min-width:1200px) {
+    $medida-card: 25%;
     .servicios {
         .servicios__cards {
-            width: 90%;
+            width: 100%;
             grid-template-areas: "subtitulo subtitulo subtitulo subtitulo";
-            grid-template-columns: 22% 22% 22% 22%;
-            grid-gap: 40px;
-            justify-content: center;
+            grid-template-columns: $medida-card $medida-card $medida-card $medida-card;
             .servicios__card {
                 max-width: 100%;
             }
