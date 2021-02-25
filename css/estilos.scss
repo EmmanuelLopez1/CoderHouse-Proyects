@@ -111,7 +111,7 @@ a {
 */
 
 .seccion {
-    margin: 30px 0px;
+    margin: 30px auto;
 }
 
 .seccion:nth-last-child(1) {
@@ -346,6 +346,11 @@ header {
         width: 80%;
         .servicios__card {
             height: auto;
+            padding: 20px;
+            .servicios__img {
+                width: 150px;
+                margin: auto;
+            }
             .servicios__img:hover {
                 transform: scale(1.1);
             }
