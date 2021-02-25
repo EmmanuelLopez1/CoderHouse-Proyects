@@ -58,7 +58,7 @@ body a {
   padding-top: 50px;
   padding-bottom: 100px;
   width: 85%;
-  height: auto !important;
+  height: auto;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -72,13 +72,9 @@ body a {
 /*
     TITULOS Y SUBTITULOS
 */
-.titulo, .titulo-white {
+.titulo {
   margin: 25px 0px;
   text-align: center;
-}
-
-.titulo-white {
-  color: white;
 }
 
 /*
@@ -137,32 +133,51 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 /*INDEX*/
 /*IMAGEN PRINCIPAL Y ENCABEZADO*/
 .background {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   background-image: url("../img/Hosting Company/imagenes/ondas.png"), linear-gradient(237deg, #46b3ff 0%, #0752fe 100%);
   background-position: bottom center;
   background-repeat: no-repeat;
   width: 100%;
   height: 850px;
+  color: white;
 }
 .background .brackground__titular {
   order: 2;
   margin: 0px auto;
   width: 80%;
 }
-.background .brackground__titular .background__titulo {
-  margin-top: 0px;
-}
-.background .brackground__titular .background__parrafo {
-  color: white;
-}
 .background .background__img {
   order: 1;
-  max-width: 60%;
+  max-width: 50%;
+  height: auto;
   margin: 0px auto;
 }
 
+@media (min-width: 1024px) {
+  .background .brackground__titular {
+    padding: 50px 0px;
+  }
+  .background .background__img {
+    width: 30%;
+    order: 2;
+  }
+}
+@media (min-width: 1200px) {
+  .background {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .background .brackground__titular {
+    width: 40%;
+    margin: 150px 0px 0px 0px;
+  }
+  .background .background__img {
+    width: 40%;
+    margin: 0px;
+  }
+}
 /*PRESENTACION DE LA EMPRESA*/
 .video {
   width: 100%;
@@ -173,6 +188,11 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 }
 
 @media (min-width: 768px) {
+  .video {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
   .video {
     width: 50%;
   }
