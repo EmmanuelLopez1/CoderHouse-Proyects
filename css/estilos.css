@@ -284,13 +284,10 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   width: 80%;
 }
 .servicios .servicios__cards .servicios__card {
-  height: auto !important;
+  height: auto;
 }
 .servicios .servicios__cards .servicios__card .servicios__img:hover {
   transform: scale(1.1);
-}
-.servicios .servicios__cards .servicios__card .servicios__card-title {
-  color: gold;
 }
 
 /*
@@ -301,9 +298,6 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
     display: grid;
     grid-template-areas: "subtitulo subtitulo";
     grid-template-columns: 50% 50%;
-  }
-  .servicios .servicios__cards .servicios__card {
-    height: 330px;
   }
   .servicios .servicios__cards .servicios__subtitulo {
     grid-area: subtitulo;
@@ -319,7 +313,6 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   }
   .servicios .servicios__cards .servicios__card {
     max-width: 100%;
-    height: 310px;
   }
   .servicios .servicios__cards .servicios__subtitulo {
     grid-area: subtitulo;
