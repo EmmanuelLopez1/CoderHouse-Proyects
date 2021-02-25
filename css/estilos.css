@@ -230,22 +230,22 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 }
 
 /*MISION Y VISION DE LA EMPRESA*/
-.informacion .informacion__tarjeta {
+.tarjetas .tarjetas__tarjeta {
   display: inline-block;
   border: 1px solid black;
   border-radius: 5px;
   box-shadow: 0px 5px 5px 0px #ccc;
   transition: all 1s;
 }
-.informacion .informacion__tarjeta .informacion__img {
+.tarjetas .tarjetas__tarjeta .tarjetas__img {
   display: block;
   margin: auto;
   width: 200px;
 }
-.informacion .informacion__tarjeta .informacion__parrafo {
+.tarjetas .tarjetas__tarjeta .tarjetas__parrafo {
   margin: 20px;
 }
-.informacion .informacion__tarjeta:hover {
+.tarjetas .tarjetas__tarjeta:hover {
   background-color: #E02084;
   color: white;
   transform: scale(1.05);

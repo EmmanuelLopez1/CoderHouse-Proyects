@@ -288,19 +288,19 @@ header {
 
 /*MISION Y VISION DE LA EMPRESA*/
 
-.informacion {
-    .informacion__tarjeta {
+.tarjetas {
+    .tarjetas__tarjeta {
         display: inline-block;
         border: 1px solid black;
         border-radius: 5px;
         box-shadow: $box-shadow;
         transition: all 1s;
-        .informacion__img {
+        .tarjetas__img {
             display: block;
             margin: auto;
             width: 200px;
         }
-        .informacion__parrafo {
+        .tarjetas__parrafo {
             margin: 20px;
         }
         &:hover {
