@@ -32,6 +32,7 @@ $bgColorFooter:#4980ff;
 
 * {
     padding: 0px;
+    margin: 0px;
 }
 
 .boton {
@@ -461,6 +462,12 @@ header {
     }
 }
 
+
+/*
+    BLOG
+*/
+
+@import "blog";
 
 /*
     GALERIA

@@ -1,0 +1,33 @@
+.blog {
+    img {
+        width: 200px;
+    }
+}
+
+.blog {
+    .main-new {
+        margin-top: 100px;
+        .titulo {
+            color: red;
+        }
+        .main-new__img {
+            width: 100%;
+        }
+        .main-new__texto {
+            width: 80%;
+            margin: auto;
+        }
+    }
+    .informacion {
+        margin: 10px auto;
+        font-size: 18px;
+    }
+    .articulos {
+        .seccion {
+            margin: 10px auto;
+        }
+        .main__img {
+            width: 100%;
+        }
+    }
+}

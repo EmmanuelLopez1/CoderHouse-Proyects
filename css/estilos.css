@@ -13,6 +13,7 @@
 */
 * {
   padding: 0px;
+  margin: 0px;
 }
 
 .boton {
@@ -378,6 +379,37 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
     justify-content: space-around;
   }
 }
+/*
+    BLOG
+*/
+.blog img {
+  width: 200px;
+}
+
+.blog .main-new {
+  margin-top: 100px;
+}
+.blog .main-new .titulo {
+  color: red;
+}
+.blog .main-new .main-new__img {
+  width: 100%;
+}
+.blog .main-new .main-new__texto {
+  width: 80%;
+  margin: auto;
+}
+.blog .informacion {
+  margin: 10px auto;
+  font-size: 18px;
+}
+.blog .articulos .seccion {
+  margin: 10px auto;
+}
+.blog .articulos .main__img {
+  width: 100%;
+}
+
 /*
     GALERIA
 */
