@@ -8,28 +8,23 @@
     <meta name="description" content="Servicios de desarrollo web profesionales, SEO, ventas online y mas.">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/animate.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
     <script src="https://kit.fontawesome.com/a0f72ea1e7.js" crossorigin="anonymous"></script>
     <title>Desarrollo web, SEO, venta online</title>
 </head>
 
 <body>
     <header>
+        <a href="../index.html">
+            <img class="header__logo" src="../img/logo2.png" alt="">
+        </a>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img class="navbar__img" src="../img/logo2.png" alt="">
-                </a>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class=" nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
+
                         <li class=" nav-item">
                             <a class=" nav-link" href="servicios.html">Servicios</a>
                         </li>
@@ -48,7 +43,7 @@
         </nav>
     </header>
 
-    <div class="galeria">
+    <div class="galeria content">
         <div class="burbuja"></div>
         <div class="burbuja"></div>
         <div class="burbuja"></div>
@@ -59,7 +54,7 @@
         <div class="burbuja"></div>
         <div class="burbuja"></div>
 
-        <h2 class="galeria__titulo">Conoce algunas de nuestras plantillas</h2>
+        <h2 class="galeria__titulo text-center">Conoce algunas de nuestras plantillas</h2>
         <section class="galeria__imagenes">
             <a href="#image1" class="galeria__enlace">
                 <img loading="lazy" class="galeria__imagen" src="../img/galeria/sitio1/Captura.PNG" alt="">
@@ -89,7 +84,7 @@
             <a href="#image2" class="pop-up__link">
                 <i class="fas fa-arrow-right"></i>
             </a>
-            <a href="#" class="pop-up__close" id="image1">X</a>
+            <a href="#" class="pop-up__close">X</a>
         </article>
 
         <article class="pop-up" id="image2">
@@ -100,7 +95,7 @@
             <a href="#image3" class="pop-up__link">
                 <i class="fas fa-arrow-right"></i>
             </a>
-            <a href="#" class="pop-up__close" id="image2">X</a>
+            <a href="#" class="pop-up__close">X</a>
         </article>
 
         <article class="pop-up" id="image3">
@@ -111,7 +106,7 @@
             <a href="#image4" class="pop-up__link">
                 <i class="fas fa-arrow-right"></i>
             </a>
-            <a href="#" class="pop-up__close" id="image3">X</a>
+            <a href="#" class="pop-up__close">X</a>
         </article>
 
         <article class="pop-up" id="image4">
@@ -122,7 +117,7 @@
             <a href="#image5" class="pop-up__link">
                 <i class="fas fa-arrow-right"></i>
             </a>
-            <a href="#" class="pop-up__close" id="image4">X</a>
+            <a href="#" class="pop-up__close">X</a>
         </article>
 
         <article class="pop-up" id="image5">
@@ -133,7 +128,7 @@
             <a href="#image6" class="pop-up__link">
                 <i class="fas fa-arrow-right"></i>
             </a>
-            <a href="#" class="pop-up__close" id="image5">X</a>
+            <a href="#" class="pop-up__close">X</a>
         </article>
 
         <article class="pop-up" id="image6">
@@ -144,41 +139,39 @@
             <a href="#image1" class="pop-up__link">
                 <i class="fas fa-arrow-right"></i>
             </a>
-            <a href="#" class="pop-up__close" id="image6">X</a>
+            <a href="#" class="pop-up__close">X</a>
         </article>
     </div>
 
 
-    <footer class="footer">
+    <footer class="footer flex">
         <div class="footer__redes-sociales">
-            <h4 class="footer__titulo">Siguenos en:</h4>
-            <a href="" class="footer__red-social">
-                <img loading="lazy" src="../img/whatsapp.png" alt="icono de whatsapp" class="footer__img">
+            <h4 class="titulo">Siguenos en:</h4>
+            <a href="" class="footer__red-social footer__link">
+                <img src="../img/whatsapp.png" alt="icono de whatsapp" class="footer__img">
             </a>
 
-            <a href="" class="footer__red-social">
-                <img loading="lazy" src="../img/facebook.png" alt="icono de facebook" class="footer__img">
+            <a href="" class="footer__red-social footer__link">
+                <img src="../img/facebook.png" alt="icono de facebook" class="footer__img">
             </a>
 
 
-            <a href="" class="footer__red-social">
-                <img loading="lazy" src="../img/instagram.png" alt="icono de instagram" class="footer__img">
+            <a href="" class="footer__red-social footer__link">
+                <img src="../img/instagram.png" alt="icono de instagram" class="footer__img">
             </a>
         </div>
 
-        <div class="footer__inf-contacto">
-            <a class="footer__link" href="tel:+523411965411">Llamanos: +52 341-196-5411</a>
-            <a class="footer__link" href="mailto:babybabyprettyboy@gmail.com">Email: babybabyprettyboy@gmail.com</a>
+        <div class="flex">
+            <a class="footer__link footer__contacto" href="tel:+523411965411">Llamanos: +52 341-196-5411</a>
+            <a class="footer__link footer__contacto" href="mailto:babybabyprettyboy@gmail.com">Email: babybabyprettyboy@gmail.com</a>
         </div>
 
         <div class="wow fadeInUpBig footer__maps">
-            <iframe loading="lazy" class="footer__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95777.33906218095!2d2.078727320594587!3d41.39489759438033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1612722065591!5m2!1ses-419!2smx"
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe class="footer__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95777.33906218095!2d2.078727320594587!3d41.39489759438033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1612722065591!5m2!1ses-419!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="../js/wow.min.js"></script>
     <script src="../js/main.js"></script>
 </body>

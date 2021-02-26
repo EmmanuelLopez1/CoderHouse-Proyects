@@ -14,21 +14,18 @@
 
 <body>
     <header>
+        <a href="../index.html">
+            <img class="header__logo" src="../img/logo2.png" alt="">
+        </a>
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img class="navbar__img" src="../img/logo2.png" alt="">
-                </a>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class=" nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
+
                         <li class=" nav-item">
                             <a class=" nav-link" href="servicios.html">Servicios</a>
                         </li>
@@ -47,86 +44,77 @@
         </nav>
     </header>
 
-    <div class="servicios">
-        <div class="servicios__presentacion">
+    <section class="servicios content">
+        <h2 class="titulo">Conoce más sobre nosotros</h2>
+        <article class=" seccion">
             <img class="wow fadeIn servicios__presentacion-img" src="../img/diseño.jpg" alt="manos de hombre escribiendo en computadora.">
-            <h2 class="wow flipInY lightSpeedInRight servicios__titulo">
+            <h2 class="wow flipInY lightSpeedInRight titulo">
                 ¿Quienes somos?
             </h2>
-            <p class="wow fadeInUp servicios__parrafo">Web master design es una empresa dedicada a la creacion de <strong>paginas web</strong> profesionales, ayudamos a pequeñas y medianas empresas a introducirse hacía un <strong>mercado digital</strong> cada vez más grande y en constante expancion,
+            <p class="wow fadeInUp">Web master design es una empresa dedicada a la creacion de <strong>paginas web</strong> profesionales, ayudamos a pequeñas y medianas empresas a introducirse hacía un <strong>mercado digital</strong> cada vez más grande y en constante expancion,
                 usamos las ultimas tecnologías y tendencias asegurandonos de cumplir los más altos niveles de lalidad en la <strong>web.</strong>En nosotros encontraras un grupo de expertos dispuestos a trabaja de la mano con tu empresa para llevar a
                 tu negocio al siguiente niel.</p>
-        </div>
+        </article>
 
 
-        <h2 class="wow fadeInUp servicios__titulo">
-            Nuestros servicios
-        </h2>
-        <div class="servicios__cards">
-            <div class="wow bounceInDown servicios__card card" style="width: 18rem;">
+
+        <article class="servicios__cards">
+            <h2 class="wow fadeInUp servicios__subtitulo titulo">
+                Nuestros servicios
+            </h2>
+
+            <div class="wow bounceInDown seccion servicios__card card" style="width: 18rem;">
                 <img src="../img/diseno-web.png" class="card-img-top servicios__img" alt="icono de diseño web">
-                <div class="card-body">
-                    <h5 class="card-title servicios__card-title">Desarrollo web</h5>
-                    <p class="card-text servicios__card-text">No importa el tipo de negocio que tengas, te ayudamos a <strong>diseñas una web a tu medida</strong> y obtener todos los beneficios de estar en internet.</p>
-
-                </div>
+                <h5 class="titulo">Desarrollo web</h5>
+                <p class=" ">No importa el tipo de negocio que tengas, te ayudamos a <strong>diseñas una web a tu medida</strong> y obtener todos los beneficios de estar en internet.</p>
             </div>
 
-            <div class="wow bounceInUp servicios__card card" style="width: 18rem;">
+            <div class="wow bounceInUp seccion servicios__card card" style="width: 18rem;">
                 <img src="../img/geolocalizacion.png" class="card-img-top servicios__img" alt="icono de geolocalizacion">
-                <div class="card-body">
-                    <h5 class="card-title servicios__card-title">SEO</h5>
-                    <p class="card-text servicios__card-text">Aparece en las primeras posiciones de busqueda gracias a nuestra implementacion de estrategias <strong> SEO,</strong> consigue más y mejores visitas.</p>
-
-                </div>
+                <h5 class="titulo">SEO</h5>
+                <p>Aparece en las primeras posiciones de busqueda gracias a nuestra implementacion de estrategias <strong> SEO,</strong> consigue más y mejores visitas.</p>
             </div>
 
-            <div class="wow bounceInDown servicios__card card" style="width: 18rem;">
+            <div class="wow bounceInDown seccion servicios__card card" style="width: 18rem;">
                 <img src="../img/venta.png" class="card-img-top servicios__img" alt="icono de tienda online">
-                <div class="card-body">
-                    <h5 class="card-title servicios__card-title">Venta online</h5>
-                    <p class="card-text servicios__card-text">LLevamos a tu negocio al siguiente nivel, creamos tu <strong>tienda online</strong> para que puedas vender tus productos por internet. </p>
-
-                </div>
+                <h5 class="titulo">Venta online</h5>
+                <p class=" ">LLevamos a tu negocio al siguiente nivel, creamos tu <strong>tienda online</strong> para que puedas vender tus productos por internet. </p>
             </div>
 
-            <div class="wow bounceInUp servicios__card card" style="width: 18rem;">
+            <div class="wow bounceInUp seccion servicios__card card" style="width: 18rem;">
                 <img src="../img/map.png" class="card-img-top servicios__img" alt="icono de google maps">
-                <div class="card-body">
-                    <h5 class="card-title servicios__card-title">Google Maps</h5>
-                    <p class="card-text servicios__card-text">Te ayudamos a destacar en los resutados de busqueda locales para que tu negocio sea mas visible y resalte de la competencia.</p>
-
-                </div>
+                <h5 class="titulo">Google Maps</h5>
+                <p class="">Te ayudamos a destacar en los resutados de busqueda locales para que tu negocio sea mas visible y resalte de la competencia.</p>
             </div>
+        </article>
+    </section>
 
-        </div>
-    </div>
 
-    <footer class="footer">
+    <footer class="footer flex">
         <div class="footer__redes-sociales">
-            <h4 class="footer__titulo">Siguenos en:</h4>
-            <a href="" class="footer__red-social">
+            <h4 class="titulo">Siguenos en:</h4>
+            <a href="" class="footer__red-social footer__link">
                 <img src="../img/whatsapp.png" alt="icono de whatsapp" class="footer__img">
             </a>
 
-            <a href="" class="footer__red-social">
+            <a href="" class="footer__red-social footer__link">
                 <img src="../img/facebook.png" alt="icono de facebook" class="footer__img">
             </a>
 
 
-            <a href="" class="footer__red-social">
+            <a href="" class="footer__red-social footer__link">
                 <img src="../img/instagram.png" alt="icono de instagram" class="footer__img">
             </a>
         </div>
 
-        <div class="footer__inf-contacto">
-            <a class="footer__link" href="tel:+523411965411">Llamanos: +52 341-196-5411</a>
-            <a class="footer__link" href="mailto:babybabyprettyboy@gmail.com">Email: babybabyprettyboy@gmail.com</a>
+        <div class="flex">
+            <a class="footer__link footer__contacto" href="tel:+523411965411">Llamanos: +52 341-196-5411</a>
+            <a class="footer__link footer__contacto" href="mailto:babybabyprettyboy@gmail.com">Email: babybabyprettyboy@gmail.com</a>
         </div>
 
         <div class="wow fadeInUpBig footer__maps">
             <iframe class="footer__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95777.33906218095!2d2.078727320594587!3d41.39489759438033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1612722065591!5m2!1ses-419!2smx"
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </footer>
 

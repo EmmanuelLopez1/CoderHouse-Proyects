@@ -15,21 +15,17 @@
 <body>
 
     <header>
+        <a href="../index.html">
+            <img class="header__logo" src="../img/logo2.png" alt="">
+        </a>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img class="navbar__img" src="../img/logo2.png" alt="">
-                </a>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class=" nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
+
                         <li class=" nav-item">
                             <a class=" nav-link" href="servicios.html">Servicios</a>
                         </li>
@@ -48,60 +44,56 @@
         </nav>
     </header>
 
-    <div class="contacto">
-        <form class="wow fadeInLeft contacto__formulario" action="">
-            <h2 class="contacto__titulo">¿Todavia tienes dudas?</h2>
-            <p class="contacto__parrafo">Puedes contactarnos por los siguientes medios.</p>
+    <div class="contacto content flex">
+        <form class="wow fadeInLeft contacto__formulario flex">
+            <h2 class="titulo">¿Todavia tienes dudas?</h2>
+            <p>Puedes contactarnos por los siguientes medios.</p>
             <input type="text" class="contacto__input" placeholder="Ingresa tu nombre">
             <input type="email" class="contacto__input" placeholder="Ingresa tu email">
             <input type="text" class="contacto__input" placeholder="Ingresa tu telefono">
-            <textarea cols="10" rows="7" class="contacto__textarea" placeholder="Ingresa un mensaje"></textarea>
+            <textarea cols="10" rows="7" class="contacto__input contacto__textarea" placeholder="Ingresa un mensaje"></textarea>
             <div class="contacto__newsletter">
                 <p class="contacto__parrafo">¿Le gustaría recibir boletines informativos?</p>
                 <input class="contacto__checkbox" type="checkbox">
             </div>
-            <input type="submit" class="contacto__boton boton">
-            <input type="reset" class="contacto__boton boton">
+            <input type="submit" class="boton">
+            <input type="reset" class="boton">
         </form>
 
-        <!--BOOTSTRAP-->
 
-        <div class="wow fadeInDown contacto__alternativo">
-            <h2 class="contacto__titulo">Llamanos</h2>
 
-            <div class="row contacto__alternativo-boton">
-                <button type="button" class="contacto__boton btn btn-primary btn-lg col-sm-12 col-md-12 col-lg-8 ">Llamanos</button>
-            </div>
-
+        <div class="wow fadeInDown contacto__telefono flex">
+            <h2 class="titulo">Llamanos</h2>
+            <button type="button" class="btn btn-primary btn-lg">Llamanos</button>
         </div>
 
     </div>
 
-    <footer class="footer">
+    <footer class="footer flex">
         <div class="footer__redes-sociales">
-            <h4 class="footer__titulo">Siguenos en:</h4>
-            <a href="" class="footer__red-social">
+            <h4 class="titulo">Siguenos en:</h4>
+            <a href="" class="footer__red-social footer__link">
                 <img src="../img/whatsapp.png" alt="icono de whatsapp" class="footer__img">
             </a>
 
-            <a href="" class="footer__red-social">
+            <a href="" class="footer__red-social footer__link">
                 <img src="../img/facebook.png" alt="icono de facebook" class="footer__img">
             </a>
 
 
-            <a href="" class="footer__red-social">
+            <a href="" class="footer__red-social footer__link">
                 <img src="../img/instagram.png" alt="icono de instagram" class="footer__img">
             </a>
         </div>
 
-        <div class="footer__inf-contacto">
-            <a class="footer__link" href="tel:+523411965411">Llamanos: +52 341-196-5411</a>
-            <a class="footer__link" href="mailto:babybabyprettyboy@gmail.com">Email: babybabyprettyboy@gmail.com</a>
+        <div class="flex">
+            <a class="footer__link footer__contacto" href="tel:+523411965411">Llamanos: +52 341-196-5411</a>
+            <a class="footer__link footer__contacto" href="mailto:babybabyprettyboy@gmail.com">Email: babybabyprettyboy@gmail.com</a>
         </div>
 
         <div class="wow fadeInUpBig footer__maps">
             <iframe class="footer__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95777.33906218095!2d2.078727320594587!3d41.39489759438033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1612722065591!5m2!1ses-419!2smx"
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </footer>
 
