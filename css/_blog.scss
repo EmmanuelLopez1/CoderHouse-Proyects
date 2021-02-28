@@ -6,9 +6,13 @@
 
 .blog {
     .main-new {
-        margin-top: 100px;
+        margin-top: 0px;
         .titulo {
-            color: red;
+            color: #031750;
+            font-weight: bold;
+        }
+        .titulo:hover {
+            color: #0A9DD3;
         }
         .main-new__img {
             width: 100%;

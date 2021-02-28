@@ -49,7 +49,6 @@ body a {
   font-family: "EB Garamond";
   font-size: 24px;
   text-decoration: none;
-  color: white;
 }
 
 /*
@@ -387,10 +386,14 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 }
 
 .blog .main-new {
-  margin-top: 100px;
+  margin-top: 0px;
 }
 .blog .main-new .titulo {
-  color: red;
+  color: #031750;
+  font-weight: bold;
+}
+.blog .main-new .titulo:hover {
+  color: #0A9DD3;
 }
 .blog .main-new .main-new__img {
   width: 100%;
