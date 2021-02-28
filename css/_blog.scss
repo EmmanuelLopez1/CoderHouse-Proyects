@@ -1,19 +1,6 @@
 .blog {
-    img {
-        width: 200px;
-    }
-}
-
-.blog {
     .main-new {
         margin-top: 0px;
-        .titulo {
-            color: #031750;
-            font-weight: bold;
-        }
-        .titulo:hover {
-            color: #0A9DD3;
-        }
         .main-new__img {
             width: 100%;
         }
@@ -23,15 +10,21 @@
         }
     }
     .informacion {
-        margin: 10px auto;
         font-size: 18px;
     }
-    .articulos {
-        .seccion {
-            margin: 10px auto;
+    .articulos__titular {
+        color: #1D2F57;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+            color: #0A9DD3;
         }
+    }
+    .articulos {
         .main__img {
             width: 100%;
         }
     }
 }
+
+@media(min-width:768px) {}

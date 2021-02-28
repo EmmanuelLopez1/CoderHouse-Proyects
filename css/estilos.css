@@ -381,19 +381,8 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 /*
     BLOG
 */
-.blog img {
-  width: 200px;
-}
-
 .blog .main-new {
   margin-top: 0px;
-}
-.blog .main-new .titulo {
-  color: #031750;
-  font-weight: bold;
-}
-.blog .main-new .titulo:hover {
-  color: #0A9DD3;
 }
 .blog .main-new .main-new__img {
   width: 100%;
@@ -403,11 +392,15 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   margin: auto;
 }
 .blog .informacion {
-  margin: 10px auto;
   font-size: 18px;
 }
-.blog .articulos .seccion {
-  margin: 10px auto;
+.blog .articulos__titular {
+  color: #1D2F57;
+  font-weight: bold;
+  cursor: pointer;
+}
+.blog .articulos__titular:hover {
+  color: #0A9DD3;
 }
 .blog .articulos .main__img {
   width: 100%;
