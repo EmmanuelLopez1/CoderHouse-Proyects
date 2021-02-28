@@ -78,10 +78,6 @@ body a {
   text-align: center;
 }
 
-img {
-  background-color: blue !important;
-}
-
 /*
     ESTILOS CON FLEX.
 */
@@ -139,7 +135,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 /*IMAGEN PRINCIPAL Y ENCABEZADO*/
 .background {
   justify-content: flex-start;
-  background-image: url("../img/Hosting Company/imagenes/ondas.png"), linear-gradient(237deg, #46b3ff 0%, #0752fe 100%);
+  background-image: url("../img/ondas.png"), linear-gradient(237deg, #46b3ff 0%, #0752fe 100%);
   background-position: bottom center;
   background-repeat: no-repeat;
   width: 100%;
@@ -316,7 +312,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 }
 .servicios .servicios__card .servicios__img {
   width: 150px;
-  margin: auto;
+  margin: 0px auto;
 }
 .servicios .servicios__card .servicios__img:hover {
   transform: scale(1.1);
