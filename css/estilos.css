@@ -407,24 +407,48 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   width: 100%;
   margin-bottom: 10px;
 }
-
-.sidebar {
+.blog .sidebar {
   width: 85%;
-  margin: 0px auto 100px auto;
+  margin: 0px auto 100px;
 }
 
 @media (min-width: 768px) {
   .blog .articulos {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .blog .articulos .seccion {
     width: 45%;
-    margin: 0px auto;
     height: 450px;
+    margin: 0px;
   }
   .blog .blog__titular {
     text-align: justify;
+  }
+}
+@media (min-width: 1200px) {
+  .blog {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 60% 30%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "main side" "articulos  side";
+  }
+  .blog .main-new {
+    grid-area: main;
+  }
+  .blog .main-new__texto {
+    width: 100%;
+  }
+  .blog .articulos {
+    width: 100%;
+    grid-area: articulos;
+  }
+  .blog .sidebar {
+    grid-area: side;
   }
 }
 /*
