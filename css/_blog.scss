@@ -1,18 +1,18 @@
 .blog {
     .main-new {
         margin-top: 0px;
-        .main-new__img {
+        &__img {
             width: 100%;
         }
-        .main-new__texto {
+        &__texto {
             width: 80%;
             margin: auto;
         }
     }
-    .informacion {
+    &__informacion {
         font-size: 18px;
     }
-    .articulos__titular {
+    &__titular {
         color: #1D2F57;
         font-weight: bold;
         cursor: pointer;
@@ -21,10 +21,15 @@
         }
     }
     .articulos {
-        .main__img {
+        &__img {
             width: 100%;
         }
     }
+}
+
+.sidebar {
+    width: 85%;
+    margin: 0px auto 100px auto;
 }
 
 @media(min-width:768px) {}

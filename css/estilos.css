@@ -384,26 +384,31 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 .blog .main-new {
   margin-top: 0px;
 }
-.blog .main-new .main-new__img {
+.blog .main-new__img {
   width: 100%;
 }
-.blog .main-new .main-new__texto {
+.blog .main-new__texto {
   width: 80%;
   margin: auto;
 }
-.blog .informacion {
+.blog__informacion {
   font-size: 18px;
 }
-.blog .articulos__titular {
+.blog__titular {
   color: #1D2F57;
   font-weight: bold;
   cursor: pointer;
 }
-.blog .articulos__titular:hover {
+.blog__titular:hover {
   color: #0A9DD3;
 }
-.blog .articulos .main__img {
+.blog .articulos__img {
   width: 100%;
+}
+
+.sidebar {
+  width: 85%;
+  margin: 0px auto 100px auto;
 }
 
 /*
