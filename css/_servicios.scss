@@ -1,0 +1,55 @@
+/*
+    PAGINA DE SERVICIOS
+*/
+
+.servicios {
+    .servicios__presentacion-img {
+        width: 100%;
+        display: block;
+    }
+    .servicios__card {
+        margin: 30px 20px 0px 20px;
+        height: auto;
+        padding: 20px;
+        .servicios__img {
+            width: 150px;
+            margin: 0px auto;
+        }
+        .servicios__img:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+/*
+    RESPONSIVE SERVICIOS CARDS
+*/
+
+@media(min-width:786px) {
+    .servicios__cards {
+        display: grid;
+        grid-template-areas: "subtitulo subtitulo";
+        grid-template-columns: 50% 50%;
+        .servicios__subtitulo {
+            grid-area: subtitulo;
+        }
+    }
+}
+
+@media(min-width:1200px) {
+    $medida-card: 25%;
+    .servicios {
+        .servicios__cards {
+            width: 100%;
+            grid-template-areas: "subtitulo subtitulo subtitulo subtitulo";
+            grid-template-columns: $medida-card $medida-card $medida-card $medida-card;
+            .servicios__card {
+                max-width: 100%;
+            }
+            .servicios__subtitulo {
+                grid-area: subtitulo;
+            }
+        }
+    }
+}

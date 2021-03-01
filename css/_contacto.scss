@@ -1,0 +1,38 @@
+/*
+    PAGINA DE CONTACTO
+*/
+
+.contacto {
+    .contacto__newsletter {
+        display: flex;
+        align-items: center;
+    }
+    .contacto__input {
+        height: 50px;
+        outline: none;
+        padding-left: 5px;
+        margin: 10px 0px;
+    }
+    .contacto__textarea {
+        max-height: 130px;
+        min-height: 130px;
+    }
+    .contacto__checkbox {
+        margin-left: 15px;
+        width: 20px;
+        height: 20px;
+    }
+    .contacto__checkbox:hover {
+        cursor: pointer;
+    }
+    .contacto__telefono {
+        width: 425px;
+    }
+}
+
+@media(min-width:1024px) {
+    .contacto {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
