@@ -23,6 +23,7 @@
     .articulos {
         &__img {
             width: 100%;
+            margin-bottom: 10px;
         }
     }
 }
@@ -32,4 +33,19 @@
     margin: 0px auto 100px auto;
 }
 
-@media(min-width:768px) {}
+@media(min-width:768px) {
+    .blog {
+        .articulos {
+            flex-direction: row;
+            flex-wrap: wrap;
+            .seccion {
+                width: 45%;
+                margin: 0px auto;
+                height: 450px;
+            }
+        }
+        .blog__titular {
+            text-align: justify;
+        }
+    }
+}
