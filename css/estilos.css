@@ -173,8 +173,8 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 
 /*IMAGEN PRINCIPAL Y ENCABEZADO*/
 .background {
-  justify-content: flex-start;
-  background-image: url("https://i.postimg.cc/FK8p6mDT/ondas.png"), linear-gradient(237deg, #46b3ff 0%, #0752fe 100%);
+  background-image: url("../img/ondas.png"), linear-gradient(237deg, #46b3ff 0%, #0752fe 100%);
+  background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
   width: 100%;
