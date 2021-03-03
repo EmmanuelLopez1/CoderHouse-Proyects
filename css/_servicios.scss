@@ -4,12 +4,11 @@
 
 .servicios {
     .servicios__presentacion-img {
-        width: 100%;
-        display: block;
+        width: 50%;
     }
     .servicios__card {
-        margin: 30px 20px 0px 20px;
-        height: auto;
+        height: 500px;
+        margin: 20px 0px;
         padding: 20px;
         .servicios__img {
             width: 150px;
@@ -28,27 +27,24 @@
 
 @media(min-width:786px) {
     .servicios__cards {
-        display: grid;
-        grid-template-areas: "subtitulo subtitulo";
-        grid-template-columns: 50% 50%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .servicios__card {
+            margin: 0px;
+        }
         .servicios__subtitulo {
-            grid-area: subtitulo;
+            width: 100%;
         }
     }
 }
 
 @media(min-width:1200px) {
-    $medida-card: 25%;
     .servicios {
         .servicios__cards {
-            width: 100%;
-            grid-template-areas: "subtitulo subtitulo subtitulo subtitulo";
-            grid-template-columns: $medida-card $medida-card $medida-card $medida-card;
+            justify-content: space-between;
             .servicios__card {
-                max-width: 100%;
-            }
-            .servicios__subtitulo {
-                grid-area: subtitulo;
+                max-width: 23%;
             }
         }
     }
