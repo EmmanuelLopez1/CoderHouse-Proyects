@@ -143,6 +143,15 @@
     }
 }
 
+@media(min-width:768px) {
+    .tarjetas {
+        display: flex;
+        .tarjeta {
+            width: 45%;
+        }
+    }
+}
+
 
 /*
     FIN DEL INDEX

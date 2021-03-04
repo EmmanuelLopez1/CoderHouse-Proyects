@@ -280,6 +280,14 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   width: 200px;
 }
 
+@media (min-width: 768px) {
+  .tarjetas {
+    display: flex;
+  }
+  .tarjetas .tarjeta {
+    width: 45%;
+  }
+}
 /*
     FIN DEL INDEX
 */
