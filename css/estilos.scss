@@ -122,18 +122,16 @@
 
 /*MISION Y VISION DE LA EMPRESA*/
 
-.tarjetas {
-    &__tarjeta {
-        display: inline-block;
-        border: 1px solid black;
-        border-radius: 5px;
-        box-shadow: $box-shadow;
-        transition: all 1s;
-        &:hover {
-            background-color: $dark-blue;
-            color: white;
-            transform: scale(1.05);
-        }
+.tarjeta {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    transition: all 1s;
+    &:hover {
+        background-color: $dark-blue;
+        color: white;
+        transform: scale(1.05);
     }
     &__parrafo {
         margin: 20px;
