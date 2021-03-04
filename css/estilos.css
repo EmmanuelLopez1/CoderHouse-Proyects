@@ -2,7 +2,9 @@
     FUENTES
 */
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap");
-/*BOTONES*/
+/*
+    PALETA DE COLORES.
+*/
 /*TARJETAS*/
 /*FOOTER*/
 /*
@@ -20,19 +22,16 @@
   margin: 15px auto;
   text-decoration: none;
   text-align: center;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 10px;
-  background-color: #E02084;
+  background-color: #3485BF;
   color: white;
-  line-height: 30px;
   transition: all 1.5s;
-  box-shadow: 0px 5px 5px 0px #ccc;
-  font-size: 22px;
-  cursor: pointer;
+  font-size: 20px;
 }
 .boton:hover {
   color: white;
-  background-color: #A34C96;
+  background-color: #46B3FF;
   transform: scale(1.1);
 }
 
@@ -55,7 +54,6 @@ body a {
   padding-top: 50px;
   padding-bottom: 100px;
   width: 85%;
-  height: auto;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -111,7 +109,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
   font-size: 22px;
 }
 header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover {
-  background-color: #E02084;
+  background-color: #112C40;
   padding: 0px 5px;
   transition: all 0.5s;
 }
@@ -125,7 +123,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 }
 
 .footer {
-  background-color: #E02084;
+  background-color: #112C40;
   padding: 15px 0px;
   align-items: center;
   color: white;
@@ -140,6 +138,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   width: 100%;
 }
 .footer__link {
+  color: white;
   margin: 12px;
   transition: all 0.5s;
 }
@@ -147,16 +146,10 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   transform: scale(1.1);
   color: white;
 }
-.footer__maps {
-  width: auto;
-}
 .footer__mapa {
   border-radius: 5px;
   width: 100%;
   height: 200px;
-}
-.footer__contacto {
-  text-align: center;
 }
 
 @media (min-width: 1024px) {
@@ -172,20 +165,19 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 
 /*IMAGEN PRINCIPAL Y ENCABEZADO*/
 .background {
-  background-image: url("../img/ondas.png"), linear-gradient(237deg, #46b3ff 0%, #0752fe 100%);
-  background-size: cover;
+  background-image: url("../img/ondas.png"), linear-gradient(237deg, #112C40 0%, #225980 100%);
   background-position: bottom center;
+  background-size: 100%;
   background-repeat: no-repeat;
-  width: 100%;
   height: 850px;
   color: white;
 }
-.background .brackground__titular {
+.background__titular {
   order: 2;
   margin: 0px auto;
   width: 80%;
 }
-.background .background__img {
+.background__img {
   order: 1;
   max-width: 50%;
   height: auto;
@@ -193,10 +185,10 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 }
 
 @media (min-width: 1024px) {
-  .background .brackground__titular {
+  .background__titular {
     padding: 50px 0px;
   }
-  .background .background__img {
+  .background__img {
     width: 30%;
     order: 2;
   }
@@ -204,15 +196,14 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 @media (min-width: 1200px) {
   .background {
     flex-direction: row;
-    justify-content: space-around;
     align-items: flex-start;
     justify-content: space-around;
   }
-  .background .brackground__titular {
+  .background__titular {
     width: 40%;
     margin: 150px 0px 0px 0px;
   }
-  .background .background__img {
+  .background__img {
     width: 40%;
     margin: 0px;
   }
@@ -241,16 +232,16 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 */
 .video .video__pelicula .vjs-control-bar {
   background: white;
-  color: #E02084;
+  color: #112C40;
 }
 .video .video__pelicula .vjs-play-progress {
-  background: #A34C96;
+  background: #112C40;
 }
 .video .video__pelicula .vjs-volume-level {
-  background-color: #A34C96;
+  background-color: #112C40;
 }
 .video .video__pelicula .vjs-slider {
-  background-color: #E02084;
+  background-color: #112C40;
 }
 .video .video__pelicula .vjs-tech:hover ~ .vjs-big-play-button {
   background-color: rgba(0, 0, 0, 0.1);
@@ -269,25 +260,25 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 }
 
 /*MISION Y VISION DE LA EMPRESA*/
-.tarjetas .tarjetas__tarjeta {
+.tarjetas__tarjeta {
   display: inline-block;
   border: 1px solid black;
   border-radius: 5px;
   box-shadow: 0px 5px 5px 0px #ccc;
   transition: all 1s;
 }
-.tarjetas .tarjetas__tarjeta .tarjetas__img {
+.tarjetas__tarjeta:hover {
+  background-color: #112C40;
+  color: white;
+  transform: scale(1.05);
+}
+.tarjetas__parrafo {
+  margin: 20px;
+}
+.tarjetas__img {
   display: block;
   margin: auto;
   width: 200px;
-}
-.tarjetas .tarjetas__tarjeta .tarjetas__parrafo {
-  margin: 20px;
-}
-.tarjetas .tarjetas__tarjeta:hover {
-  background-color: #E02084;
-  color: white;
-  transform: scale(1.05);
 }
 
 /*
@@ -348,6 +339,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   align-items: center;
 }
 .contacto .contacto__input {
+  width: 100%;
   height: 50px;
   outline: none;
   padding-left: 5px;
@@ -392,12 +384,12 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   font-size: 18px;
 }
 .blog__titular {
-  color: #1D2F57;
+  color: #112C40;
   font-weight: bold;
   cursor: pointer;
 }
 .blog__titular:hover {
-  color: #0A9DD3;
+  color: #46B3FF;
 }
 .blog .articulos__img {
   width: 100%;
@@ -429,6 +421,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
     margin: auto;
     display: grid;
     justify-content: space-between;
+    align-items: flex-start;
     grid-template-columns: 60% 30%;
     grid-template-rows: auto auto;
     grid-template-areas: "main side" "articulos  side";
@@ -451,8 +444,8 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
     GALERIA
 */
 .galeria {
-  width: 100vw;
-  background-image: radial-gradient(circle at 50% -20.71%, #ff7f85 0, #ff748c 8.33%, #ff6994 16.67%, #ff5d9c 25%, #ff52a4 33.33%, #ff47ad 41.67%, #f23cb5 50%, #e234be 58.33%, #cf32c8 66.67%, #b935d2 75%, #9f3bdb 83.33%, #7e42e5 91.67%, #514aed 100%);
+  width: 100%;
+  background-image: radial-gradient(circle at 50% 3.41%, #8bafd0 0, #659ac7 25%, #3385bf 50%, #0070b6 75%, #005dae 100%);
 }
 .galeria .burbuja:nth-child(1) {
   width: 80px;
@@ -553,7 +546,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   left: 0;
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
