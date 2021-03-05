@@ -13,7 +13,7 @@
         font-size: 18px;
     }
     &__titular {
-        color: $dark-blue;
+        
         font-weight: bold;
         cursor: pointer;
         &:hover {
@@ -52,7 +52,7 @@
 
 @media(min-width:1200px) {
     .blog {
-        width: 85%;
+        width: 80%;
         margin: auto;
         display: grid;
         justify-content: space-between;

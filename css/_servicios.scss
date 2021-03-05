@@ -2,53 +2,45 @@
     PAGINA DE SERVICIOS
 */
 
-.servicios {
-    .servicios__presentacion-img {
-        width: 50%;
-    }
-    .servicios__card {
-        height: 500px;
-        margin: 20px 0px;
-        padding: 20px;
-        .servicios__img {
-            width: 150px;
-            margin: 0px auto;
-        }
-        .servicios__img:hover {
-            transform: scale(1.1);
-        }
-    }
-    .titulo {
-        color: $dark-blue;
-    }
+.servicios__presentacion-img {
+  width: 50%;
 }
-
+.servicios__card {
+  height: 550px;
+  margin: 20px 0px;
+  padding: 20px;
+  .servicios__img {
+    width: 150px;
+    margin: 0px auto;
+  }
+  .servicios__img:hover {
+    transform: scale(1.1);
+  }
+}
 
 /*
     RESPONSIVE SERVICIOS CARDS
 */
 
-@media(min-width:786px) {
-    .servicios__cards {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        .servicios__card {
-            margin: 0px;
-        }
-        .servicios__subtitulo {
-            width: 100%;
-        }
+@media (min-width: 786px) {
+  .servicios__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .servicios__card {
+      margin: 0px;
     }
+    .servicios__subtitulo {
+      width: 100%;
+    }
+  }
 }
 
-@media(min-width:1200px) {
-    .servicios {
-        .servicios__cards {
-            justify-content: space-between;
-            .servicios__card {
-                max-width: 23%;
-            }
-        }
+@media (min-width: 1200px) {
+  .servicios__cards {
+    justify-content: space-between;
+    .servicios__card {
+      max-width: 23%;
     }
+  }
 }

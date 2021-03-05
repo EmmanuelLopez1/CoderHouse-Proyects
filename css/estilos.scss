@@ -16,25 +16,19 @@
     background-size: 100%;
     background-repeat: no-repeat;
     height: 850px;
-    color: white;
     &__titular {
-        order: 2;
         margin: 0px auto;
         width: 80%;
     }
     &__img {
-        order: 1;
         max-width: 50%;
-        height: auto;
         margin: 0px auto;
     }
+    
 }
 
 @media(min-width:1024px) {
     .background {
-        &__titular {
-            padding: 50px 0px;
-        }
         &__img {
             width: 30%;
             order: 2;
@@ -47,7 +41,7 @@
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-around;
-        &__titular {
+        .backgorund__titular {
             width: 40%;
             margin: 150px 0px 0px 0px;
         }
@@ -169,10 +163,10 @@
 @import "_contacto.scss";
 
 /*
-    BLOG
+    ARTICULOS
 */
 
-@import "blog";
+@import "_articulo.scss";
 
 /*
     GALERIA

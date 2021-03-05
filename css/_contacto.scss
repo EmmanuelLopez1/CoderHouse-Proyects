@@ -3,28 +3,9 @@
 */
 
 .contacto {
-    .contacto__newsletter {
-        display: flex;
-        align-items: center;
-    }
-    .contacto__input {
-        width: 100%;
-        height: 50px;
-        outline: none;
-        padding-left: 5px;
-        margin: 10px 0px;
-    }
     .contacto__textarea {
         max-height: 130px;
         min-height: 130px;
-    }
-    .contacto__checkbox {
-        margin-left: 15px;
-        width: 20px;
-        height: 20px;
-    }
-    .contacto__checkbox:hover {
-        cursor: pointer;
     }
     .contacto__telefono {
         width: 425px;
