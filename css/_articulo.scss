@@ -1,33 +1,34 @@
 @import "blog.scss";
-.articulo{
-  &__img{
+@import "estilos-generales";
+
+.articulo {
+  img {
+    margin: 20px auto;
     width: 100%;
   }
-  &__video{
-    width: 100%;
-  }
-  p{
+  p {
     margin: 25px 0px;
     font-size: 1.3em;
   }
+  &__video {
+    width: 100%;
+  }
+  .side {
+    width: 100%;
+  }
+  
 }
 
-.main__img {
-  width: 100%;
-  margin-bottom: 20px;
-}
 
-.side {
-  width: 100%;
+@media (min-width: 600px) {
+  .articulo{
+    .main__img {
+      width: 80%;
+    }
+  }
 }
-
 
 @media (min-width: 768px) {
-  .main__img {
-    width: 60%;
-    margin: 0px auto 20px;
-    display: block;
-  }
   .form {
     .input {
       width: 70%;
@@ -36,13 +37,7 @@
 }
 
 @media (min-width: 1024px) {
-  .main__img {
-    width: 100%;
-  }
-  .content{
-    width: 80%;
-  }
-  .articulo {
+.articulo {
     display: grid;
     grid-template-columns: 60% 30%;
     grid-template-areas: "main side" "suscripcion side";
@@ -50,6 +45,12 @@
     align-items: flex-start;
     .main {
       grid-area: main;
+      &__img {
+        width: 100%;
+      }
+    }
+    .content {
+      width: 80%;
     }
     .side {
       grid-area: side;
