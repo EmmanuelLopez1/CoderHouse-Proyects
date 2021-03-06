@@ -80,7 +80,7 @@ body img {
 /*
     ALINEADO VERTICAL CON FLEX
 */
-.flex {
+.alinear-vertical {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -558,7 +558,7 @@ body img {
 /*
     ALINEADO VERTICAL CON FLEX
 */
-.flex {
+.alinear-vertical {
   display: flex;
   flex-direction: column;
   justify-content: center;
