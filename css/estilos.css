@@ -1,11 +1,10 @@
 /*
-    FUENTES
+    FUENTES 
 */
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap");
 /*
     PALETA DE COLORES.
 */
-/*TARJETAS*/
 /*
     ESTILOS GENERALES
 */
@@ -47,9 +46,9 @@ body a {
 }
 
 /*
-    CONTENT
+    CONTENEDOR
 */
-.content, .content-index {
+.content, .content-servicios, .content-index {
   padding-top: 50px;
   padding-bottom: 100px;
   width: 85%;
@@ -60,7 +59,7 @@ body a {
 }
 
 /*
-    TITULOS Y SUBTITULOS
+    TITULOS
 */
 .titulo, .titulo-white {
   width: 100%;
@@ -74,7 +73,7 @@ body a {
 }
 
 /*
-    ESTILOS CON FLEX.
+    ALINEADO VERTICAL CON FLEX
 */
 .flex {
   display: flex;
@@ -112,7 +111,7 @@ body a {
 }
 
 /*
-    SECCIONES
+    SEPARAR SECCIONES DE LAS PAGINAS
 */
 .seccion {
   margin: 30px auto;
@@ -322,20 +321,20 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 /*
     PAGINA DE SERVICIOS
 */
-.servicios__presentacion-img {
-  width: 50%;
+.main-servicios__img {
+  width: 100%;
 }
 
-.servicios__card {
+.tarjetas__ficha {
   height: 550px;
-  margin: 20px 0px;
+  margin: 20px 0px 0px;
   padding: 20px;
 }
-.servicios__card .servicios__img {
+.tarjetas__img {
   width: 150px;
   margin: 0px auto;
 }
-.servicios__card .servicios__img:hover {
+.tarjetas__img:hover {
   transform: scale(1.1);
 }
 
@@ -343,24 +342,35 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
     RESPONSIVE SERVICIOS CARDS
 */
 @media (min-width: 786px) {
-  .servicios__cards {
+  .tarjetas {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .servicios__cards .servicios__card {
+  .tarjetas__ficha {
     margin: 0px;
   }
-  .servicios__cards .servicios__subtitulo {
+  .tarjetas__subtitulo {
     width: 100%;
   }
 }
 @media (min-width: 1200px) {
-  .servicios__cards {
+  .main-servicios__img {
+    width: 50%;
+  }
+  .main-servicios__parrafo {
+    font-size: 22px;
+  }
+
+  .tarjetas {
     justify-content: space-between;
   }
-  .servicios__cards .servicios__card {
+  .tarjetas__ficha {
     max-width: 23%;
+    height: 460px;
+  }
+  .tarjetas__parrafo {
+    font-size: 20px;
   }
 }
 /*
@@ -372,9 +382,6 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 .contacto .contacto__textarea {
   max-height: 130px;
   min-height: 130px;
-}
-.contacto .contacto__telefono {
-  width: 425px;
 }
 
 @media (min-width: 1024px) {
@@ -407,6 +414,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   color: #46B3FF;
 }
 .blog .articulos__img {
+  height: 200px;
   width: 100%;
   margin-bottom: 10px;
 }
@@ -491,7 +499,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
     width: 100%;
   }
 
-  .content, .content-index {
+  .content, .content-index, .content-servicios {
     width: 80%;
   }
 
@@ -518,6 +526,12 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 .galeria {
   width: 100%;
   background-image: radial-gradient(circle at 50% 3.41%, #8bafd0 0, #659ac7 25%, #3385bf 50%, #0070b6 75%, #005dae 100%);
+  /*
+      ANIMACIONES DE LAS BURBUJAS.
+  */
+  /*
+      ESTILOS DE LA GALERIA.
+  */
 }
 .galeria .burbuja:nth-child(1) {
   width: 80px;
@@ -590,9 +604,8 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   bottom: 0px;
   animation: burbujas 3s linear infinite;
 }
-.galeria .galeria__titulo {
-  color: white;
-  text-align: center;
+.galeria .titulo-white {
+  margin: 0px;
   padding: 20px 0px 0px;
 }
 .galeria .galeria__imagenes .galeria__imagen {

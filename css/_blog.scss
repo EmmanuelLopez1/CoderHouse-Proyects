@@ -13,7 +13,6 @@
         font-size: 18px;
     }
     &__titular {
-        
         font-weight: bold;
         cursor: pointer;
         &:hover {
@@ -22,6 +21,7 @@
     }
     .articulos {
         &__img {
+            height: 200px;
             width: 100%;
             margin-bottom: 10px;
         }

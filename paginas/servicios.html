@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -20,14 +20,16 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                         <li class=" nav-item">
-                            <a class=" nav-link" href="servicios.html">Servicios</a>
+                            <a class=" nav-link" href="tarjetas.html">Servicios</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.html">Contacto</a>
@@ -44,47 +46,61 @@
         </nav>
     </header>
 
-    <section class="servicios content">
+    <section class="content">
         <h2 class="titulo">Conoce más sobre nosotros</h2>
-        <article class="seccion flex">
-            <img class="wow fadeIn servicios__presentacion-img" src="https://i.postimg.cc/gjqKrhd7/dise-o.jpg" alt="manos de hombre escribiendo en computadora.">
-            <h2 class="wow flipInY lightSpeedInRight titulo">
+        <article class="main-servicios flex">
+            <img class="wow fadeIn main-servicios__img" src="https://i.postimg.cc/gjqKrhd7/dise-o.jpg"
+                alt="manos de hombre escribiendo en computadora.">
+            <h2 class="titulo">
                 ¿Quiénes somos?
             </h2>
-            <p class="wow fadeInUp">Web master design es una empresa dedicada a la creación de <strong>páginas web</strong> profesionales, ayudamos a pequeñas y medianas empresas a introducirse hacia un <strong>mercado digital</strong> cada vez más grande y en constante expansión,
-                usamos las últimas tecnologías y tendencias asegurándonos de cumplir los más altos niveles de calidad en la web.</strong>En nosotros encontraras un grupo de expertos dispuestos a trabaja de la mano con tu empresa para llevar a tu negocio
-                al siguiente nivel.</p>
+            <p class="main-servicios__parrafo">Web master design es una empresa dedicada a la creación de <strong>páginas
+                    web</strong> profesionales, ayudamos a pequeñas y medianas empresas a introducirse hacia un
+                <strong>mercado digital</strong> cada vez más grande y en constante expansión,
+                usamos las últimas tecnologías y tendencias asegurándonos de cumplir los más altos niveles de calidad en
+                la web.En nosotros encontraras un grupo de expertos dispuestos a trabaja de la mano con tu
+                empresa para llevar a tu negocio
+                al siguiente nivel.
+            </p>
         </article>
 
-
-
-        <article class="servicios__cards flex">
-            <h2 class="wow fadeInUp servicios__subtitulo titulo">
+        <!--
+            TARJETAS QUE MUESTRAN LOS SERVICIOS OFRECIDOS.
+        -->
+        <article class="tarjetas flex">
+            <h2 class="wow fadeInUp tarjetas__subtitulo titulo">
                 Nuestros servicios
             </h2>
 
-            <div class="wow bounceInDown seccion servicios__card card" style="width: 18rem;">
-                <img src="https://i.postimg.cc/KjX91FT1/diseno-web.png" class="servicios__img" alt="icono de una maquetacion web animada">
+            <div class="wow bounceInDown seccion tarjetas__ficha card" style="width: 18rem;">
+                <img src="https://i.postimg.cc/KjX91FT1/diseno-web.png" class="tarjetas__img"
+                    alt="icono de una maquetacion web animada">
                 <h5 class="titulo">Desarrollo web</h5>
-                <p>No importa el tipo de negocio que tengas, te ayudamos a <strong>diseñar una web a tu medida</strong> y obtener todos los beneficios de estar en internet.</p>
+                <p class="tarjetas__parrafo">No importa el tipo de negocio que tengas, te ayudamos a <strong>diseñar una web a tu medida</strong>
+                    y obtener todos los beneficios de estar en internet.</p>
             </div>
 
-            <div class="wow bounceInUp seccion servicios__card card" style="width: 18rem;">
-                <img src="https://i.postimg.cc/gjvgR5yN/geolocalizacion.png" class="servicios__img" alt="telefono celular abriendo una aplicacion de maps">
+            <div class="wow bounceInUp seccion tarjetas__ficha card" style="width: 18rem;">
+                <img src="https://i.postimg.cc/gjvgR5yN/geolocalizacion.png" class="tarjetas__img"
+                    alt="telefono celular abriendo una aplicacion de maps">
                 <h5 class="titulo">SEO</h5>
-                <p>Aparece en las primeras posiciones de búsqueda gracias a nuestra implementación de estrategias <strong> SEO,</strong> consigue más y mejores visitas.</p>
+                <p class="tarjetas__parrafo">Aparece en las primeras posiciones de búsqueda gracias a nuestra implementación de estrategias
+                    <strong> SEO,</strong> consigue más y mejores visitas.
+                </p>
             </div>
 
-            <div class="wow bounceInDown seccion servicios__card card" style="width: 18rem;">
-                <img src="https://i.postimg.cc/RFtd58Y4/venta.png" class="servicios__img" alt="icono de tienda online">
+            <div class="wow bounceInDown seccion tarjetas__ficha card" style="width: 18rem;">
+                <img src="https://i.postimg.cc/RFtd58Y4/venta.png" class="tarjetas__img" alt="icono de tienda online">
                 <h5 class="titulo">Venta online</h5>
-                <p>LLevamos a tu negocio al siguiente nivel, creamos tu <strong>tienda online</strong> para que puedas vender tus productos por internet. </p>
+                <p class="tarjetas__parrafo">LLevamos a tu negocio al siguiente nivel, creamos tu <strong>tienda online</strong> para que puedas
+                    vender tus productos por internet. </p>
             </div>
 
-            <div class="wow bounceInUp seccion servicios__card card" style="width: 18rem;">
-                <img src="https://i.postimg.cc/BQ0YsSsy/map.png" class="servicios__img" alt="icono de google maps">
+            <div class="wow bounceInUp seccion tarjetas__ficha card" style="width: 18rem;">
+                <img src="https://i.postimg.cc/BQ0YsSsy/map.png" class="tarjetas__img" alt="icono de google maps">
                 <h5 class="titulo">Google Maps</h5>
-                <p>Te ayudamos a destacar en los resultados de búsqueda locales para que tu negocio sea más visible y resalte de la competencia.</p>
+                <p class="tarjetas__parrafo">Te ayudamos a destacar en los resultados de búsqueda locales para que tu negocio sea más visible y
+                    resalte de la competencia.</p>
             </div>
         </article>
     </section>
@@ -96,25 +112,30 @@
                 <img class="footer__img" src="https://i.postimg.cc/nrtkH287/whatsapp.png" alt="icono de whatsapp">
             </a>
 
-            <a href="https://www.facebook.com/Web-Master-Design-102107954884497" class="footer__red-social footer__link">
+            <a href="https://www.facebook.com/Web-Master-Design-102107954884497"
+                class="footer__red-social footer__link">
                 <img class="footer__img" src="https://i.postimg.cc/634j6T8s/facebook.png" alt="icono de facebook">
             </a>
         </div>
 
         <div class="flex">
             <a class="footer__link footer__contacto" href="tel:+523411965411">Llamanos: +52 341-196-5411</a>
-            <a class="footer__link footer__contacto" href="mailto:babybabyprettyboy@gmail.com">Email: babybabyprettyboy@gmail.com</a>
+            <a class="footer__link footer__contacto" href="mailto:babybabyprettyboy@gmail.com">Email:
+                babybabyprettyboy@gmail.com</a>
         </div>
 
         <div class="wow fadeInUpBig footer__maps">
-            <iframe class="footer__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95777.33906218095!2d2.078727320594587!3d41.39489759438033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1612722065591!5m2!1ses-419!2smx"
+            <iframe class="footer__mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95777.33906218095!2d2.078727320594587!3d41.39489759438033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1612722065591!5m2!1ses-419!2smx"
                 width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
     <script src="../js/wow.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="../js/servicios.js"></script>
 </body>
 
 </html>

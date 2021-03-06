@@ -156,6 +156,10 @@
 
 @import "_servicios.scss";
 
+.content-servicios{
+    @extend .content;
+}
+
 /*
     PAGINA DE CONTACTO
 */
