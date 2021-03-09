@@ -196,7 +196,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 }
 /*INDEX*/
 .content-index {
-  padding-bottom: 0px !important;
+  padding-top: 0px;
 }
 
 /*IMAGEN PRINCIPAL Y ENCABEZADO*/
@@ -240,83 +240,10 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 /*
     SERVICIOS
 */
-.servicios .titular .boton {
-  margin: 30px 0px 0px;
-  background-color: #2970fa;
-  line-height: 40px;
-  letter-spacing: 1px;
-}
-.servicios .service {
-  background-color: #fff;
-  box-shadow: 0px 90px 160px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 24px;
-  padding: 20px 30px;
-  margin: 20px 0px;
-}
-.servicios .service h4 {
-  font-size: 23px;
-  font-weight: bold;
-  font-family: "Rubik";
-}
-.servicios .service p {
-  color: #787878;
-  font-size: 15px;
-  line-height: 32px;
-}
-.servicios .service a {
-  letter-spacing: 1px;
-  font-size: 13px;
-  font-family: "Rubik";
-}
-.servicios h2 {
-  font-family: "Rubik";
-  font-weight: 500;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #ff8f00;
-  letter-spacing: 1px;
-}
-.servicios h3 {
-  font-weight: 500;
-  font-size: 24px;
-}
-
-@media (min-width: 768px) {
-  .servicios .contenedor {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .servicios .contenedor .titular {
-    width: 49%;
-  }
-  .servicios .contenedor .service-1 {
-    width: 40%;
-  }
-}
 @media (min-width: 1024px) {
-  .servicios .service {
-    width: 27%;
-  }
   .servicios .contenedor {
+    display: flex;
     justify-content: space-around;
-  }
-  .servicios .contenedor .service-1 {
-    width: 27%;
-    margin-left: 130px;
-  }
-  .servicios .contenedor .contenedor .titular {
-    width: 49%;
-  }
-  .servicios .contenedor .contenedor h3 {
-    font-size: 38px;
-  }
-  .servicios .contenedor2 {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .servicios .contenedor2 .service-2 {
-    position: relative;
-    top: -250px;
   }
 }
 /*PRESENTACION DE LA EMPRESA*/
@@ -1001,4 +928,4 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   }
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estiloc.css.map */

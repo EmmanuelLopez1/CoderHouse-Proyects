@@ -3,161 +3,254 @@
 /*INDEX*/
 
 .content-index {
-    @extend .content;
-    padding-top: 0px;
+  @extend .content;
+  padding-bottom: 0px !important;
 }
-
 
 /*IMAGEN PRINCIPAL Y ENCABEZADO*/
 
 .background {
-    background-image: url("../img/ondas.png"), linear-gradient(237deg, $dark-blue 0%, $middle-blue 100%);
-    background-position: bottom center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 850px;
-    &__titular {
-        margin: 0px auto;
-        width: 80%;
+  background-image: url("../img/ondas.png"),
+    linear-gradient(237deg, $dark-blue 0%, $middle-blue 100%);
+  background-position: bottom center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 850px;
+  &__titular {
+    margin: 0px auto;
+    width: 80%;
+  }
+  &__img {
+    max-width: 50%;
+    margin: 0px auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .background {
+    &__img {
+      width: 30%;
+      order: 2;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .background {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    .backgorund__titular {
+      width: 40%;
+      margin: 150px 0px 0px 0px;
     }
     &__img {
-        max-width: 50%;
-        margin: 0px auto;
+      width: 40%;
+      margin: 0px;
     }
-    
+  }
 }
 
-@media(min-width:1024px) {
-    .background {
-        &__img {
-            width: 30%;
-            order: 2;
-        }
+/*
+    SERVICIOS
+*/
+$fuente-tarjetas: "Rubik";
+$espaciado-letras: 1px;
+$furnte-grosor: 500;
+.servicios {
+  .titular {
+    .boton {
+      margin: 30px 0px 0px;
+      background-color: #2970fa;
+      line-height: 40px;
+      letter-spacing: $espaciado-letras;
     }
+  }
+  .service {
+    background-color: #fff;
+    box-shadow: 0px 90px 160px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 20px 30px;
+    margin: 20px 0px;
+    h4 {
+      font-size: 23px;
+      font-weight: bold;
+      font-family: $fuente-tarjetas;
+    }
+    p {
+      color: #787878;
+      font-size: 15px;
+      line-height: 32px;
+    }
+    a {
+      letter-spacing: $espaciado-letras;
+      font-size: 13px;
+      font-family: $fuente-tarjetas;
+    }
+  }
+  h2 {
+    font-family: $fuente-tarjetas;
+    font-weight: $furnte-grosor;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ff8f00;
+    letter-spacing: $espaciado-letras;
+  }
+  h3 {
+    font-weight: $furnte-grosor;
+    font-size: 24px;
+  }
 }
 
-@media(min-width:1200px) {
-    .background {
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-around;
-        .backgorund__titular {
-            width: 40%;
-            margin: 150px 0px 0px 0px;
-        }
-        &__img {
-            width: 40%;
-            margin: 0px;
-        }
+@media (min-width: 768px) {
+.servicios {
+  .contenedor {
+      flex-direction: row;
+      justify-content: space-between;
+      .titular {
+        width: 49%;
+      }
+      .service-1 {
+        width: 40%;
+      }
     }
+  }
 }
 
+@media (min-width: 1024px) {
+  .servicios {
+    .service {
+      width: 27%;
+    }
+    .contenedor {
+      justify-content: space-around;
+
+      .service-1 {
+        width: 27%;
+        margin-left: 130px;
+      }
+      .contenedor {
+        .titular {
+          width: 49%;
+        }
+        h3 {
+          font-size: 38px;
+        }
+      }
+    }
+
+    .contenedor2 {
+      flex-direction: row;
+      justify-content: space-around;
+      .service-2 {
+        position: relative;
+        top: -250px;
+      }
+    }
+  }
+}
 
 /*PRESENTACION DE LA EMPRESA*/
 
 .video {
-    width: 100%;
-    &__pelicula {
-        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, .5);
-        border-radius: 5px;
-    }
+  width: 100%;
+  &__pelicula {
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
 }
 
-@media(min-width:768px) {
-    .video {
-        width: 80%;
-    }
+@media (min-width: 768px) {
+  .video {
+    width: 80%;
+  }
 }
 
-@media(min-width:1024px) {
-    .video {
-        width: 50%;
-    }
+@media (min-width: 1024px) {
+  .video {
+    width: 50%;
+  }
 }
-
 
 /*
     REPRODUCTOR DE VIDEO ELEMENTOS
 */
 
 .video {
-    .video__pelicula {
-        .vjs-control-bar {
-            background: white;
-            color: $dark-blue;
-        }
-        .vjs-play-progress {
-            background: $dark-blue;
-        }
-        .vjs-volume-level {
-            background-color: $dark-blue;
-        }
-        .vjs-slider {
-            background-color: $dark-blue;
-        }
-        .vjs-tech:hover~.vjs-big-play-button {
-            background-color: rgba(0, 0, 0, .1);
-        }
-        .vjs-big-play-button {
-            width: 50px;
-            height: 50px;
-            line-height: 45px;
-            border-radius: 99px;
-            background-color: rgba(0, 0, 0, .1);
-        }
-        .vjs-big-play-button:hover {
-            transform: scale(1.1);
-            background-color: rgba(0, 0, 0, .2);
-            transition: all .5s;
-        }
+  .video__pelicula {
+    .vjs-control-bar {
+      background: white;
+      color: $dark-blue;
     }
+    .vjs-play-progress {
+      background: $dark-blue;
+    }
+    .vjs-volume-level {
+      background-color: $dark-blue;
+    }
+    .vjs-slider {
+      background-color: $dark-blue;
+    }
+    .vjs-tech:hover ~ .vjs-big-play-button {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    .vjs-big-play-button {
+      width: 50px;
+      height: 50px;
+      line-height: 45px;
+      border-radius: 99px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    .vjs-big-play-button:hover {
+      transform: scale(1.1);
+      background-color: rgba(0, 0, 0, 0.2);
+      transition: all 0.5s;
+    }
+  }
 }
-
 
 /*MISION Y VISION DE LA EMPRESA*/
 
 .tarjeta {
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: $box-shadow;
-    transition: all 1s;
-    &:hover {
-        background-color: $dark-blue;
-        color: white;
-        transform: scale(1.05);
-    }
-    &__parrafo {
-        margin: 20px;
-    }
-    &__img {
-        display: block;
-        margin: auto;
-        width: 200px;
-    }
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: $box-shadow;
+  transition: all 1s;
+  &:hover {
+    background-color: $dark-blue;
+    color: white;
+    transform: scale(1.05);
+  }
+  &__parrafo {
+    margin: 20px;
+  }
+  &__img {
+    display: block;
+    margin: auto;
+    width: 200px;
+  }
 }
 
-@media(min-width:768px) {
-    .tarjetas {
-        display: flex;
-        .tarjeta {
-            width: 45%;
-        }
+@media (min-width: 768px) {
+  .tarjetas {
+    display: flex;
+    .tarjeta {
+      width: 45%;
     }
+  }
 }
-
 
 /*
     FIN DEL INDEX
 */
 
-
 /*SERVICIOS*/
 
 @import "_servicios.scss";
 
-.content-servicios{
-    @extend .content;
+.content-servicios {
+  @extend .content;
 }
 
 /*
