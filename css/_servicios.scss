@@ -1,0 +1,65 @@
+/*
+    PAGINA DE SERVICIOS
+*/
+
+.main-servicios {
+  &__img {
+    width: 100%;
+  }
+}
+
+.tarjetas {
+  &__ficha {
+    height: 550px;
+    margin: 20px 0px 0px;
+    padding: 20px;
+  }
+
+  &__img {
+    width: 150px;
+    margin: 0px auto;
+  }
+  &__img:hover {
+    transform: scale(1.1);
+  }
+}
+
+/*
+    RESPONSIVE SERVICIOS CARDS
+*/
+
+@media (min-width: 786px) {
+  .tarjetas {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__ficha {
+      margin: 0px;
+    }
+    &__subtitulo {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-servicios {
+    &__img {
+      width: 50%;
+    }
+    &__parrafo{
+      font-size: 22px;
+    }
+  }
+    .tarjetas {
+      justify-content: space-between;
+      &__ficha {
+        max-width: 23%;
+        height: 460px;
+      }
+      &__parrafo {
+        font-size: 20px;
+      }
+    }
+  }
+
