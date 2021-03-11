@@ -1,3 +1,0 @@
-let reproducor = videojs('video', {
-
-})

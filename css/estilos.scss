@@ -2,9 +2,8 @@
 
 /*INDEX*/
 
-.content-index {
+.content-index{
   @extend .content;
-  padding-bottom: 0px !important;
 }
 
 /*IMAGEN PRINCIPAL Y ENCABEZADO*/
@@ -150,64 +149,9 @@ $furnte-grosor: 500;
   }
 }
 
-/*PRESENTACION DE LA EMPRESA*/
-
-.video {
-  width: 100%;
-  &__pelicula {
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-  }
-}
-
-@media (min-width: 768px) {
-  .video {
-    width: 80%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .video {
-    width: 50%;
-  }
-}
-
 /*
-    REPRODUCTOR DE VIDEO ELEMENTOS
+  VIDEO
 */
-
-.video {
-  .video__pelicula {
-    .vjs-control-bar {
-      background: white;
-      color: $dark-blue;
-    }
-    .vjs-play-progress {
-      background: $dark-blue;
-    }
-    .vjs-volume-level {
-      background-color: $dark-blue;
-    }
-    .vjs-slider {
-      background-color: $dark-blue;
-    }
-    .vjs-tech:hover ~ .vjs-big-play-button {
-      background-color: rgba(0, 0, 0, 0.1);
-    }
-    .vjs-big-play-button {
-      width: 50px;
-      height: 50px;
-      line-height: 45px;
-      border-radius: 99px;
-      background-color: rgba(0, 0, 0, 0.1);
-    }
-    .vjs-big-play-button:hover {
-      transform: scale(1.1);
-      background-color: rgba(0, 0, 0, 0.2);
-      transition: all 0.5s;
-    }
-  }
-}
 
 /*MISION Y VISION DE LA EMPRESA*/
 
