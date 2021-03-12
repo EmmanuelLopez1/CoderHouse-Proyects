@@ -146,12 +146,6 @@ body img {
   line-height: 32px;
 }
 
-.card__enlace {
-  letter-spacing: 1px;
-  font-size: 13px;
-  font-family: "Rubik";
-}
-
 /*
     SEPARAR SECCIONES DE LAS PAGINAS
 */
@@ -298,6 +292,11 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   font-weight: bold;
   font-family: "Rubik";
 }
+.servicios .service a {
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-family: "Rubik";
+}
 .servicios h2 {
   font-family: "Rubik";
   font-weight: 500;
@@ -431,24 +430,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   }
 }
 /*
-    PAGINA DE CONTACTO
-*/
-/*
-    PAGINA DE CONTACTO
-*/
-.contacto .contacto__textarea {
-  max-height: 130px;
-  min-height: 130px;
-}
-
-@media (min-width: 1024px) {
-  .contacto {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-/*
-    ARTICULOS
+  PAGINA DE BLOG
 */
 .blog .main-blog {
   margin-top: 0px;
@@ -530,6 +512,9 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
     grid-area: side;
   }
 }
+/*
+    PAGINAS DE ARTICULOS
+*/
 .articulo img {
   margin: 20px auto;
   width: 100%;
@@ -580,7 +565,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   }
 }
 /*
-    GALERIA
+  PAGINA DE GALERIA
 */
 .galeria {
   width: 100%;
@@ -739,7 +724,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 }
 
 /*
-    ANIMACIONES BURBUJAS
+  ANIMACIONES BURBUJAS
 */
 @keyframes burbujas {
   0% {
@@ -758,7 +743,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   }
 }
 /*
- RESPONSIVE IMAGENES
+RESPONSIVE IMAGENES galeria
 */
 @media (min-width: 768px) {
   .galeria .galeria__imagenes {
@@ -777,5 +762,25 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
     width: 30%;
   }
 }
+/*
+  FIN DE GALERIA
+*/
+/*
+    PAGINA DE CONTACTO
+*/
+.contacto .contacto__textarea {
+  max-height: 130px;
+  min-height: 130px;
+}
+
+@media (min-width: 1024px) {
+  .contacto {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+/*
+    GALERIA
+*/
 
 /*# sourceMappingURL=estilos.css.map */
