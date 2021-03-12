@@ -1,20 +1,304 @@
-@import "estilos-generales";
+
+/*
+    FUENTES 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap');
+$fontGaramon:'EB Garamond';
+
+/*
+    PALETA DE COLORES.
+*/
+
+$light-blue:#46B3FF;
+$light-blue-darker:#3485BF;
+$middle-blue:#225980;
+$dark-blue:#112C40;
+$borderBotonColor:white;
+$textbotonColor:white;
+$box-shadow:0px 5px 5px 0px #ccc;
+
+/*
+  FUENTES
+*/
+$fuente-tarjetas: "Rubik";
+$espaciado-letras: 1px;
+$fuente-grosor: 500;
+
+/*
+  BORDES
+*/
+$forma-borde:10px;
+
+/*
+  ANIMACIONES
+*/
+$tiempo-transicion:all 1s;
+
+
+
+/*
+    ESTILOS GENERALES
+*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.boton {
+  display: block;
+    width: 200px;
+    height: 50px;
+    margin: 15px auto;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: $forma-borde;
+    background-color: $light-blue-darker;
+    color: white;
+    transition: all 1.5s;
+    font-size: 20px;
+    &:hover {
+        color: white;
+        background-color: $light-blue;
+        transform: scale(1.1);
+    }
+}
+
+body {
+    p {
+        margin: 0px;
+        font-family: $fontGaramon;
+        font-size: 24px;
+        text-align: justify;
+    }
+    a {
+        font-family: $fontGaramon;
+        font-size: 24px;
+        text-decoration: none;
+    }
+    img{
+        display:block;
+    }
+}
+
+
+/*
+    CONTENEDOR
+*/
+
+.content {
+    padding-top: 50px;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*
+    TITULOS
+*/
+
+.titulo {
+    margin: 25px auto;
+    text-align: center;
+    color: $middle-blue;
+}
+
+.titulo-white{
+    @extend .titulo;
+    color: white;
+}
+
+/*
+    ALINEADO VERTICAL CON FLEX
+*/
+
+.alinear-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.alinear-horizontal{
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*
+    INPUTS
+*/
+
+.input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    padding-left: 5px;
+    margin: 10px 0px;
+    border: 2px solid $middle-blue;
+    border-radius: $forma-borde;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox{
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox:hover {
+    cursor: pointer;
+}
+
+/*
+  TARJETA
+*/
+.card{
+    background-color: #fff;
+    box-shadow: 0px 90px 160px 0px rgba(0, 0, 0, 0.1);
+    border-radius: $forma-borde;
+    padding: 20px 30px;
+    margin: 20px 0px;
+}
+.card__titulo{
+  font-weight: $fuente-grosor;
+  font-size: 24px;
+}
+
+.card__parrafo{
+  color: #787878;
+      font-size: 15px;
+      line-height: 32px;
+}
+.card__enlace{
+  letter-spacing: $espaciado-letras;
+  font-size: 13px;
+  font-family: $fuente-tarjetas;
+}
+
+/*
+    SEPARAR SECCIONES DE LAS PAGINAS
+*/
+
+.seccion {
+    margin: 30px auto;
+}
+
+.seccion:nth-last-child(1) {
+    margin-bottom: 0px;
+}
+
+
+header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F9FA;
+    .header__logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 99px;
+    }
+    .navbar {
+        .container-fluid {
+            .collapse {
+                .navbar-nav {
+                    .nav-item {
+                        margin: 0px 10px;
+                        .nav-link {
+                            color: black;
+                            font-size: 22px;
+                    
+                        }
+                    }
+                    .nav-item:hover {
+                        background-color: $dark-blue;
+                        padding: 0px 5px;
+                        transition: $tiempo-transicion;
+                        a {
+                            color: white;
+                        }
+                    }
+                    @media(max-width: 994px) {
+                        .nav-item {
+                            margin: 10px 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    margin-top: 100px;
+    background-color: $dark-blue;
+    padding: 15px 0px;
+    align-items: center;
+    color: white;
+    &__red-social {
+        display: inline-block;
+        width: 50px;
+        transition: $tiempo-transicion;
+        border-radius: $forma-borde;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__link {
+        color: white;
+        margin: 12px;
+        transition: $tiempo-transicion;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+    }
+    &__mapa {
+        border-radius: 5px;
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media(min-width:1024px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
+
+
+
 
 /*INDEX*/
 
 .content-index{
   @extend .content;
+  padding: 30px 0px 0px;
 }
 
 /*IMAGEN PRINCIPAL Y ENCABEZADO*/
 
 .background {
-  background-image: url("../img/ondas.png"),
-    linear-gradient(237deg, $dark-blue 0%, $middle-blue 100%);
+  background-image: url("https://i.postimg.cc/FK8p6mDT/ondas.png"),
+  linear-gradient(237deg, $dark-blue 0%, $middle-blue 100%);
   background-position: bottom center;
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 850px;
+  height: 750px;
   &__titular {
     margin: 0px auto;
     width: 80%;
@@ -22,6 +306,14 @@
   &__img {
     max-width: 50%;
     margin: 0px auto;
+  }
+}
+
+@media(min-width:768px){
+  .background{
+    &__img{
+      width: 35%;
+    }
   }
 }
 
@@ -36,9 +328,11 @@
 
 @media (min-width: 1200px) {
   .background {
+    height: 850px;
     flex-direction: row;
-    align-items: flex-start;
     justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 100px;
     .backgorund__titular {
       width: 40%;
       margin: 150px 0px 0px 0px;
@@ -53,9 +347,7 @@
 /*
     SERVICIOS
 */
-$fuente-tarjetas: "Rubik";
-$espaciado-letras: 1px;
-$furnte-grosor: 500;
+
 .servicios {
   .titular {
     .boton {
@@ -66,39 +358,22 @@ $furnte-grosor: 500;
     }
   }
   .service {
-    background-color: #fff;
-    box-shadow: 0px 90px 160px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 24px;
-    padding: 20px 30px;
-    margin: 20px 0px;
+    @extend .card;
     h4 {
       font-size: 23px;
       font-weight: bold;
       font-family: $fuente-tarjetas;
     }
-    p {
-      color: #787878;
-      font-size: 15px;
-      line-height: 32px;
-    }
-    a {
-      letter-spacing: $espaciado-letras;
-      font-size: 13px;
-      font-family: $fuente-tarjetas;
-    }
   }
   h2 {
     font-family: $fuente-tarjetas;
-    font-weight: $furnte-grosor;
+    font-weight: $fuente-grosor;
     text-transform: uppercase;
     font-size: 14px;
     color: #ff8f00;
     letter-spacing: $espaciado-letras;
   }
-  h3 {
-    font-weight: $furnte-grosor;
-    font-size: 24px;
-  }
+
 }
 
 @media (min-width: 768px) {
@@ -123,7 +398,6 @@ $furnte-grosor: 500;
     }
     .contenedor {
       justify-content: space-around;
-
       .service-1 {
         width: 27%;
         margin-left: 130px;
@@ -149,36 +423,37 @@ $furnte-grosor: 500;
   }
 }
 
-/*
-  VIDEO
-*/
 
 /*MISION Y VISION DE LA EMPRESA*/
 
 .tarjeta {
+  @extend .card;
+  height: 520px;
   display: inline-block;
-  border: 1px solid black;
-  border-radius: 5px;
-  box-shadow: $box-shadow;
-  transition: all 1s;
+  border-radius: $forma-borde;
+  transition: $tiempo-transicion;
   &:hover {
     background-color: $dark-blue;
     color: white;
     transform: scale(1.05);
+    .titulo{
+      color: white;
+    }
   }
   &__parrafo {
     margin: 20px;
   }
   &__img {
-    display: block;
+
     margin: auto;
-    width: 200px;
+    width: 150px;
   }
 }
 
 @media (min-width: 768px) {
   .tarjetas {
     display: flex;
+    justify-content: space-;
     .tarjeta {
       width: 45%;
     }
@@ -189,13 +464,65 @@ $furnte-grosor: 500;
     FIN DEL INDEX
 */
 
-/*SERVICIOS*/
 
-@import "_servicios.scss";
 
-.content-servicios {
+
+/*
+    PAGINA DE SERVICIOS
+*/
+.content-services{
   @extend .content;
+  padding-top: 0px;
 }
+
+.services-page{
+  .seccion{
+    background-color: #F5F5F5;
+  }
+  &__info{
+    padding: 40px 36px;
+  }
+  &__img{
+    width: 100%;
+  }
+}
+
+@media(min-width:600px){
+  .seccion{
+    width: 80%;
+  }
+}
+
+@media(min-width:768px){
+  .content-services{
+    width: 90%;
+  }
+  .services-page{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .seccion{
+    width: 45%;
+  }
+}
+
+@media(min-width:1024px){
+  .content-services{
+    width: 85%;
+    align-items: flex-start;
+    .card__parrafo{
+      color: $dark-blue;
+      font-size: 20px;
+    }
+  }
+  .seccion{
+    width: 30%
+  }
+  
+}
+
+
+
 
 /*
     PAGINA DE CONTACTO

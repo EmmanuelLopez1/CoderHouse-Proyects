@@ -6,9 +6,17 @@
     PALETA DE COLORES.
 */
 /*
+  FUENTES
+*/
+/*
+  BORDES
+*/
+/*
+  ANIMACIONES
+*/
+/*
     ESTILOS GENERALES
 */
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -19,7 +27,6 @@
   width: 200px;
   height: 50px;
   margin: 15px auto;
-  text-decoration: none;
   text-align: center;
   border: 2px solid white;
   border-radius: 10px;
@@ -52,9 +59,8 @@ body img {
 /*
     CONTENEDOR
 */
-.content, .content-servicios, .content-index {
+.content, .content-services, .content-index {
   padding-top: 50px;
-  padding-bottom: 100px;
   width: 85%;
   margin: auto;
   display: flex;
@@ -66,8 +72,7 @@ body img {
     TITULOS
 */
 .titulo, .titulo-white {
-  width: 100%;
-  margin: 25px 0px;
+  margin: 25px auto;
   text-align: center;
   color: #225980;
 }
@@ -86,6 +91,11 @@ body img {
   align-items: center;
 }
 
+.alinear-horizontal {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 /*
     INPUTS
 */
@@ -96,7 +106,7 @@ body img {
   padding-left: 5px;
   margin: 10px 0px;
   border: 2px solid #225980;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .newsletter {
@@ -112,6 +122,34 @@ body img {
 
 .checkbox:hover {
   cursor: pointer;
+}
+
+/*
+  TARJETA
+*/
+.card, .tarjeta, .servicios .service {
+  background-color: #fff;
+  box-shadow: 0px 90px 160px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin: 20px 0px;
+}
+
+.card__titulo {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.card__parrafo {
+  color: #787878;
+  font-size: 15px;
+  line-height: 32px;
+}
+
+.card__enlace {
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-family: "Rubik";
 }
 
 /*
@@ -147,7 +185,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
 header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover {
   background-color: #112C40;
   padding: 0px 5px;
-  transition: all 0.5s;
+  transition: all 1s;
 }
 header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   color: white;
@@ -159,6 +197,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 }
 
 .footer {
+  margin-top: 100px;
   background-color: #112C40;
   padding: 15px 0px;
   align-items: center;
@@ -167,8 +206,8 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 .footer__red-social {
   display: inline-block;
   width: 50px;
-  transition: all 0.5s;
-  border-radius: 5px;
+  transition: all 1s;
+  border-radius: 10px;
 }
 .footer__img {
   width: 100%;
@@ -176,7 +215,8 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 .footer__link {
   color: white;
   margin: 12px;
-  transition: all 0.5s;
+  transition: all 1s;
+  cursor: pointer;
 }
 .footer__link:hover {
   transform: scale(1.1);
@@ -195,13 +235,17 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   }
 }
 /*INDEX*/
+.content-index {
+  padding: 30px 0px 0px;
+}
+
 /*IMAGEN PRINCIPAL Y ENCABEZADO*/
 .background {
-  background-image: url("../img/ondas.png"), linear-gradient(237deg, #112C40 0%, #225980 100%);
+  background-image: url("https://i.postimg.cc/FK8p6mDT/ondas.png"), linear-gradient(237deg, #112C40 0%, #225980 100%);
   background-position: bottom center;
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 850px;
+  height: 750px;
 }
 .background__titular {
   margin: 0px auto;
@@ -212,6 +256,11 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   margin: 0px auto;
 }
 
+@media (min-width: 768px) {
+  .background__img {
+    width: 35%;
+  }
+}
 @media (min-width: 1024px) {
   .background__img {
     width: 30%;
@@ -220,9 +269,11 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 }
 @media (min-width: 1200px) {
   .background {
+    height: 850px;
     flex-direction: row;
-    align-items: flex-start;
     justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 100px;
   }
   .background .backgorund__titular {
     width: 40%;
@@ -242,26 +293,9 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   line-height: 40px;
   letter-spacing: 1px;
 }
-.servicios .service {
-  background-color: #fff;
-  box-shadow: 0px 90px 160px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 24px;
-  padding: 20px 30px;
-  margin: 20px 0px;
-}
 .servicios .service h4 {
   font-size: 23px;
   font-weight: bold;
-  font-family: "Rubik";
-}
-.servicios .service p {
-  color: #787878;
-  font-size: 15px;
-  line-height: 32px;
-}
-.servicios .service a {
-  letter-spacing: 1px;
-  font-size: 13px;
   font-family: "Rubik";
 }
 .servicios h2 {
@@ -271,10 +305,6 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   font-size: 14px;
   color: #ff8f00;
   letter-spacing: 1px;
-}
-.servicios h3 {
-  font-weight: 500;
-  font-size: 24px;
 }
 
 @media (min-width: 768px) {
@@ -315,15 +345,11 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
     top: -250px;
   }
 }
-/*
-  VIDEO
-*/
 /*MISION Y VISION DE LA EMPRESA*/
 .tarjeta {
+  height: 520px;
   display: inline-block;
-  border: 1px solid black;
-  border-radius: 5px;
-  box-shadow: 0px 5px 5px 0px #ccc;
+  border-radius: 10px;
   transition: all 1s;
 }
 .tarjeta:hover {
@@ -331,18 +357,21 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   color: white;
   transform: scale(1.05);
 }
+.tarjeta:hover .titulo, .tarjeta:hover .titulo-white {
+  color: white;
+}
 .tarjeta__parrafo {
   margin: 20px;
 }
 .tarjeta__img {
-  display: block;
   margin: auto;
-  width: 200px;
+  width: 150px;
 }
 
 @media (min-width: 768px) {
   .tarjetas {
     display: flex;
+    justify-content: space-;
   }
   .tarjetas .tarjeta {
     width: 45%;
@@ -351,60 +380,54 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 /*
     FIN DEL INDEX
 */
-/*SERVICIOS*/
 /*
     PAGINA DE SERVICIOS
 */
-.main-servicios__img {
+.content-services {
+  padding-top: 0px;
+}
+
+.services-page .seccion {
+  background-color: #F5F5F5;
+}
+.services-page__info {
+  padding: 40px 36px;
+}
+.services-page__img {
   width: 100%;
 }
 
-.tarjetas__ficha {
-  height: 550px;
-  margin: 20px 0px 0px;
-  padding: 20px;
+@media (min-width: 600px) {
+  .seccion {
+    width: 80%;
+  }
 }
-.tarjetas__img {
-  width: 150px;
-  margin: 0px auto;
-}
-.tarjetas__img:hover {
-  transform: scale(1.1);
-}
+@media (min-width: 768px) {
+  .content-services {
+    width: 90%;
+  }
 
-/*
-    RESPONSIVE SERVICIOS CARDS
-*/
-@media (min-width: 786px) {
-  .tarjetas {
+  .services-page {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .tarjetas__ficha {
-    margin: 0px;
-  }
-  .tarjetas__subtitulo {
-    width: 100%;
-  }
-}
-@media (min-width: 1200px) {
-  .main-servicios__img {
-    width: 50%;
-  }
-  .main-servicios__parrafo {
-    font-size: 22px;
   }
 
-  .tarjetas {
-    justify-content: space-between;
+  .seccion {
+    width: 45%;
   }
-  .tarjetas__ficha {
-    max-width: 23%;
-    height: 460px;
+}
+@media (min-width: 1024px) {
+  .content-services {
+    width: 85%;
+    align-items: flex-start;
   }
-  .tarjetas__parrafo {
+  .content-services .card__parrafo {
+    color: #112C40;
     font-size: 20px;
+  }
+
+  .seccion {
+    width: 30%;
   }
 }
 /*
@@ -507,200 +530,6 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
     grid-area: side;
   }
 }
-/*
-    FUENTES 
-*/
-/*
-    PALETA DE COLORES.
-*/
-/*
-    ESTILOS GENERALES
-*/
-* {
-  padding: 0px;
-  margin: 0px;
-}
-
-.boton {
-  display: block;
-  width: 200px;
-  height: 50px;
-  margin: 15px auto;
-  text-decoration: none;
-  text-align: center;
-  border: 2px solid white;
-  border-radius: 10px;
-  background-color: #3485BF;
-  color: white;
-  transition: all 1.5s;
-  font-size: 20px;
-}
-.boton:hover {
-  color: white;
-  background-color: #46B3FF;
-  transform: scale(1.1);
-}
-
-body p {
-  margin: 0px;
-  font-family: "EB Garamond";
-  font-size: 24px;
-  text-align: justify;
-}
-body a {
-  font-family: "EB Garamond";
-  font-size: 24px;
-  text-decoration: none;
-}
-body img {
-  display: block;
-}
-
-/*
-    CONTENEDOR
-*/
-.content, .content-index, .content-servicios {
-  padding-top: 50px;
-  padding-bottom: 100px;
-  width: 85%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/*
-    TITULOS
-*/
-.titulo, .titulo-white {
-  width: 100%;
-  margin: 25px 0px;
-  text-align: center;
-  color: #225980;
-}
-
-.titulo-white {
-  color: white;
-}
-
-/*
-    ALINEADO VERTICAL CON FLEX
-*/
-.alinear-vertical {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/*
-    INPUTS
-*/
-.input {
-  width: 100%;
-  height: 50px;
-  outline: none;
-  padding-left: 5px;
-  margin: 10px 0px;
-  border: 2px solid #225980;
-  border-radius: 5px;
-}
-
-.newsletter {
-  display: flex;
-  align-items: center;
-}
-
-.checkbox {
-  margin-right: 20px;
-  width: 20px;
-  height: 20px;
-}
-
-.checkbox:hover {
-  cursor: pointer;
-}
-
-/*
-    SEPARAR SECCIONES DE LAS PAGINAS
-*/
-.seccion {
-  margin: 30px auto;
-}
-
-.seccion:nth-last-child(1) {
-  margin-bottom: 0px;
-}
-
-header {
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #F8F9FA;
-}
-header .header__logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 99px;
-}
-header .navbar .container-fluid .collapse .navbar-nav .nav-item {
-  margin: 0px 10px;
-}
-header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
-  color: black;
-  font-size: 22px;
-}
-header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover {
-  background-color: #112C40;
-  padding: 0px 5px;
-  transition: all 0.5s;
-}
-header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
-  color: white;
-}
-@media (max-width: 994px) {
-  header .navbar .container-fluid .collapse .navbar-nav .nav-item {
-    margin: 10px 0px;
-  }
-}
-
-.footer {
-  background-color: #112C40;
-  padding: 15px 0px;
-  align-items: center;
-  color: white;
-}
-.footer__red-social {
-  display: inline-block;
-  width: 50px;
-  transition: all 0.5s;
-  border-radius: 5px;
-}
-.footer__img {
-  width: 100%;
-}
-.footer__link {
-  color: white;
-  margin: 12px;
-  transition: all 0.5s;
-}
-.footer__link:hover {
-  transform: scale(1.1);
-  color: white;
-}
-.footer__mapa {
-  border-radius: 5px;
-  width: 100%;
-  height: 200px;
-}
-
-@media (min-width: 1024px) {
-  .footer {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
 .articulo img {
   margin: 20px auto;
   width: 100%;
@@ -740,7 +569,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   .articulo .main__img {
     width: 100%;
   }
-  .articulo .content, .articulo .content-index, .articulo .content-servicios {
+  .articulo .content, .articulo .content-index, .articulo .content-services {
     width: 80%;
   }
   .articulo .side {
