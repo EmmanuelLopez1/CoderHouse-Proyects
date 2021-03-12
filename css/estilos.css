@@ -397,7 +397,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 }
 
 @media (min-width: 600px) {
-  .seccion {
+  .services-page .seccion {
     width: 80%;
   }
 }
@@ -410,8 +410,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
-  .seccion {
+  .services-page .seccion {
     width: 45%;
   }
 }
@@ -424,8 +423,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
     color: #112C40;
     font-size: 20px;
   }
-
-  .seccion {
+  .content-services .seccion {
     width: 30%;
   }
 }

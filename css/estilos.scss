@@ -486,22 +486,26 @@ header {
 }
 
 @media(min-width:600px){
-  .seccion{
-    width: 80%;
+  .services-page{
+    .seccion{
+      width: 80%;
+    }
   }
 }
 
 @media(min-width:768px){
   .content-services{
     width: 90%;
+    
   }
   .services-page{
     flex-direction: row;
     flex-wrap: wrap;
+    .seccion{
+      width: 45%;
+    }
   }
-  .seccion{
-    width: 45%;
-  }
+  
 }
 
 @media(min-width:1024px){
@@ -512,11 +516,11 @@ header {
       color: $dark-blue;
       font-size: 20px;
     }
+    .seccion{
+      width: 30%
+    }
   }
-  .seccion{
-    width: 30%
-  }
-  
+
 }
 
 
