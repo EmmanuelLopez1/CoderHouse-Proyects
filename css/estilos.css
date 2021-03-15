@@ -128,6 +128,7 @@ body img {
   TARJETA
 */
 .card, .tarjeta, .servicios .service {
+  width: 25%;
   background-color: #fff;
   box-shadow: 0px 90px 160px 0px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -141,8 +142,8 @@ body img {
 }
 
 .card__parrafo {
-  color: #787878;
-  font-size: 15px;
+  color: #112C40;
+  font-size: 18px;
   line-height: 32px;
 }
 
