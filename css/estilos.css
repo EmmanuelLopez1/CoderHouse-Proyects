@@ -128,7 +128,7 @@ body img {
   TARJETA
 */
 .card, .tarjeta, .servicios .service {
-  width: 25%;
+  width: 100%;
   background-color: #fff;
   box-shadow: 0px 90px 160px 0px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -248,7 +248,8 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   width: 80%;
 }
 .background__img {
-  max-width: 50%;
+  max-width: 40%;
+  height: auto;
   margin: 0px auto;
 }
 
@@ -259,7 +260,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 }
 @media (min-width: 1024px) {
   .background__img {
-    width: 30%;
+    width: 35%;
     order: 2;
   }
 }
@@ -271,12 +272,13 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
     align-items: flex-start;
     padding-top: 100px;
   }
-  .background .backgorund__titular {
+  .background .background__titular {
     width: 40%;
     margin: 150px 0px 0px 0px;
   }
   .background__img {
     width: 40%;
+    height: auto;
     margin: 0px;
   }
 }

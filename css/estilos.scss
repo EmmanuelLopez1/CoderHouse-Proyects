@@ -162,7 +162,7 @@ body {
   TARJETA
 */
 .card{
-    width: 25%;
+    width: 100%;
     background-color: #fff;
     box-shadow: 0px 90px 160px 0px rgba(0, 0, 0, 0.1);
     border-radius: $forma-borde;
@@ -298,7 +298,8 @@ header {
     width: 80%;
   }
   &__img {
-    max-width: 50%;
+    max-width: 40%;
+    height: auto;
     margin: 0px auto;
   }
 }
@@ -314,7 +315,7 @@ header {
 @media (min-width: 1024px) {
   .background {
     &__img {
-      width: 30%;
+      width: 35%;
       order: 2;
     }
   }
@@ -327,12 +328,13 @@ header {
     justify-content: space-around;
     align-items: flex-start;
     padding-top: 100px;
-    .backgorund__titular {
+    .background__titular {
       width: 40%;
       margin: 150px 0px 0px 0px;
     }
     &__img {
       width: 40%;
+      height: auto;
       margin: 0px;
     }
   }
