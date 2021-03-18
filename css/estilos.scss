@@ -519,6 +519,7 @@ $tamaño-elementos: 100%;
     margin-top: 0px;
     &__img {
       width: $tamaño-elementos;
+      height: 350px;
     }
     &__texto {
       width: $tamaño-secciones;
@@ -556,6 +557,7 @@ $tamaño-elementos: 100%;
 .blog {
       .main-blog__img {
         width: $tamaño-secciones;
+        height: auto;
       }
       .articulos {
         flex-direction: row;
