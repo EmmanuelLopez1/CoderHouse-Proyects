@@ -554,7 +554,6 @@ $tamaño-elementos: 100%;
 
 @media (min-width: 768px) {
 .blog {
-    .main {
       .main-blog__img {
         width: $tamaño-secciones;
       }
@@ -567,11 +566,11 @@ $tamaño-elementos: 100%;
           height: 320px;
           margin: 30px auto;
         }
-        .articulo__img {
-          height: 200px;
+        &__img {
+          height:200px;
         }
       }
-    }
+    
   }
 }
 

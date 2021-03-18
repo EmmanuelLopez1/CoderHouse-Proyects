@@ -472,20 +472,20 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
 }
 
 @media (min-width: 768px) {
-  .blog .main .main-blog__img {
+  .blog .main-blog__img {
     width: 85%;
   }
-  .blog .main .articulos {
+  .blog .articulos {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .blog .main .articulos .seccion {
+  .blog .articulos .seccion {
     width: 46%;
     height: 320px;
     margin: 30px auto;
   }
-  .blog .main .articulos .articulo__img {
+  .blog .articulos__img {
     height: 200px;
   }
 }
