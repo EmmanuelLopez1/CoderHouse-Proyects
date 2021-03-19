@@ -28,7 +28,7 @@ $fuente-grosor: 500;
   BORDES
 */
 $forma-borde: 10px;
-$borde-redondo:99%;
+$borde-redondo: 99%;
 
 /*
   ANIMACIONES
@@ -56,11 +56,16 @@ $tiempo-transicion: all 1s;
   color: white;
   transition: $tiempo-transicion;
   font-size: 20px;
+  letter-spacing: $espaciado-letras;
+  line-height: 45px;
   &:hover {
     color: white;
     background-color: $light-blue;
     transform: scale(1.1);
   }
+}
+.center {
+  margin: 0px auto;
 }
 
 body {
@@ -77,7 +82,8 @@ body {
   }
   img {
     display: block;
-    margin: auto;
+    margin: 0px auto;
+    height: auto;
   }
 }
 
@@ -284,34 +290,8 @@ header {
   background-size: 100%;
   background-repeat: no-repeat;
   height: 750px;
-  &__titular {
-    margin: 0px auto;
-    width: 80%;
-  }
-  &__img {
-    max-width: 40%;
-    height: auto;
-    margin: 0px auto;
-  }
-  .boton {
-    line-height: 45px !important;
-  }
-}
-
-@media (min-width: 768px) {
-  .background {
-    &__img {
-      width: 35%;
-    }
-  }
-}
-
-@media (min-width: 1024px) {
-  .background {
-    &__img {
-      width: 35%;
-      order: 2;
-    }
+  &__separador {
+    color: white;
   }
 }
 
@@ -322,15 +302,6 @@ header {
     justify-content: space-around;
     align-items: flex-start;
     padding-top: 100px;
-    .background__titular {
-      width: 40%;
-      margin: 150px 0px 0px 0px;
-    }
-    &__img {
-      width: 40%;
-      height: auto;
-      margin: 0px;
-    }
   }
 }
 
@@ -343,30 +314,26 @@ header {
     .boton {
       margin: 30px 0px 0px;
       background-color: #2970fa;
-      line-height: 40px;
-      letter-spacing: $espaciado-letras;
     }
   }
   .service {
     @extend .card;
+    .fuente {
+      letter-spacing: $espaciado-letras;
+      font-family: $fuente-tarjetas;
+    }
     h4 {
       font-size: 23px;
       font-weight: bold;
       font-family: $fuente-tarjetas;
     }
-    a {
-      letter-spacing: $espaciado-letras;
-      font-size: 13px;
-      font-family: $fuente-tarjetas;
-    }
   }
   h2 {
-    font-family: $fuente-tarjetas;
+    @extend .fuente;
     font-weight: $fuente-grosor;
     text-transform: uppercase;
     font-size: 14px;
     color: #ff8f00;
-    letter-spacing: $espaciado-letras;
   }
 }
 
@@ -420,7 +387,7 @@ header {
 
 .tarjeta {
   @extend .card;
-  height: 520px;
+  height: 565px;
   display: inline-block;
   border-radius: $forma-borde;
   transition: $tiempo-transicion;
@@ -435,19 +402,22 @@ header {
   &__parrafo {
     margin: 20px;
   }
-  &__img {
-    margin: auto;
-    width: 150px;
-  }
 }
 
 @media (min-width: 768px) {
   .tarjetas {
     display: flex;
-    justify-content: space-;
-    .tarjeta {
-      width: 45%;
-    }
+    justify-content: space-around;
+  }
+  .tarjeta {
+    width: 45%;
+    height: 750px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tarjeta {
+    height: 565px;
   }
 }
 
@@ -461,12 +431,12 @@ header {
 .content-services {
   @extend .content;
   padding-top: 0px;
+  .card__parrafo {
+    font-size: 20px;
+  }
 }
 
 .services-page {
-  .seccion {
-    background-color: #f5f5f5;
-  }
   &__info {
     padding: 40px 36px;
   }
@@ -475,17 +445,20 @@ header {
   }
 }
 
+.seccion {
+  background-color: #f5f5f5;
+}
+
 @media (min-width: 600px) {
-  .services-page {
-    .seccion {
-      width: 80%;
-    }
+  .seccion {
+    width: 80%;
   }
 }
 
 @media (min-width: 768px) {
   .content-services {
     width: 90%;
+    align-items: flex-start;
   }
   .services-page {
     flex-direction: row;
@@ -499,10 +472,6 @@ header {
 @media (min-width: 1024px) {
   .content-services {
     width: 85%;
-    align-items: flex-start;
-    .card__parrafo {
-      font-size: 20px;
-    }
     .seccion {
       width: 30%;
     }
@@ -527,10 +496,13 @@ $tamaño-elementos: 100%;
     }
   }
   &__informacion {
+    text-align: center;
     font-size: 18px;
     margin: 10px 0px;
   }
   &__titular {
+    width: 80%;
+    margin: auto;
     font-weight: bold;
     text-align: justify;
     &:hover {
@@ -554,25 +526,24 @@ $tamaño-elementos: 100%;
 }
 
 @media (min-width: 768px) {
-.blog {
-      .main-blog__img {
-        width: $tamaño-secciones;
-        height: auto;
+  .blog {
+    .main-blog__img {
+      width: $tamaño-secciones;
+      height: auto;
+    }
+    .articulos {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .seccion {
+        width: 46%;
+        height: 370px;
+        margin: 30px auto;
       }
-      .articulos {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        .seccion {
-          width: 46%;
-          height: 320px;
-          margin: 30px auto;
-        }
-        &__img {
-          height:200px;
-        }
+      &__img {
+        height: 200px;
       }
-    
+    }
   }
 }
 
@@ -609,12 +580,17 @@ $tamaño-elementos: 100%;
 */
 
 .articulo {
+  .seccion {
+    width: 100%;
+    padding: 10px 0px;
+  }
   img {
     margin: 20px auto;
     width: 100%;
     height: 300px;
   }
   p {
+    padding: 20px;
     margin: 25px 0px;
     font-size: 1.3em;
   }
@@ -623,6 +599,14 @@ $tamaño-elementos: 100%;
   }
   .side {
     width: 100%;
+    &__enlace {
+      display: block;
+      text-align: center;
+      color: $dark-blue;
+    }
+    &__enlace:hover {
+      color: $light-blue;
+    }
   }
 }
 
@@ -631,7 +615,7 @@ $tamaño-elementos: 100%;
     .main__img {
       width: 80%;
     }
-    img{
+    img {
       height: 450px;
     }
   }
@@ -663,6 +647,9 @@ $tamaño-elementos: 100%;
     }
     .side {
       grid-area: side;
+      &__enlace {
+        padding: 0px 10px;
+      }
     }
     .suscripcion {
       grid-area: suscripcion;
@@ -799,7 +786,7 @@ $tamaño-elementos: 100%;
     transition: $tiempo-transicion;
     &__img {
       width: 75vw;
-      height: 70vh;
+      height: 40vh;
     }
     &__close {
       text-align: center;
@@ -876,6 +863,12 @@ RESPONSIVE IMAGENES galeria
       margin: 15px auto;
       width: 45%;
       height: 200px;
+    }
+
+    .pop-up {
+      &__img {
+        height: 70vh;
+      }
     }
   }
 }
