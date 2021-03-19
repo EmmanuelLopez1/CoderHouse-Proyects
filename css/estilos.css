@@ -199,7 +199,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   }
 }
 
-.footer {
+.footer, .footer-galeria {
   margin-top: 100px;
   background-color: #112c40;
   padding: 15px 0px;
@@ -231,8 +231,12 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   height: 200px;
 }
 
+.footer-galeria {
+  margin-top: 0px;
+}
+
 @media (min-width: 1024px) {
-  .footer {
+  .footer, .footer-galeria {
     flex-direction: row;
     justify-content: space-around;
   }
@@ -575,6 +579,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
   PAGINA DE GALERIA
 */
 .galeria {
+  padding-bottom: 30px;
   width: 100%;
   background-image: radial-gradient(circle at 50% 3.41%, #8bafd0 0, #659ac7 25%, #3385bf 50%, #0070b6 75%, #005dae 100%);
   /*

@@ -266,6 +266,11 @@ header {
   }
 }
 
+.footer-galeria{
+  @extend .footer;
+  margin-top: 0px;
+}
+
 @media (min-width: 1024px) {
   .footer {
     flex-direction: row;
@@ -662,6 +667,7 @@ $tamaño-elementos: 100%;
 */
 
 .galeria {
+  padding-bottom: 30px;
   $duracion-animacion: 3s;
   width: 100%;
   background-image: radial-gradient(
