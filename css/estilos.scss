@@ -413,17 +413,20 @@ header {
   .tarjetas {
     display: flex;
     justify-content: space-around;
+    .tarjeta {
+      width: 40%;
+      height: 750px;
+    }
   }
-  .tarjeta {
-    width: 45%;
-    height: 750px;
-  }
+  
 }
-
 @media (min-width: 1024px) {
-  .tarjeta {
-    height: 565px;
+  .tarjetas{
+    .tarjeta {
+      height: 565px;
+    }
   }
+  
 }
 
 /*

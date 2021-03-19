@@ -353,14 +353,13 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover a {
     display: flex;
     justify-content: space-around;
   }
-
-  .tarjeta {
-    width: 45%;
+  .tarjetas .tarjeta {
+    width: 40%;
     height: 750px;
   }
 }
 @media (min-width: 1024px) {
-  .tarjeta {
+  .tarjetas .tarjeta {
     height: 565px;
   }
 }
